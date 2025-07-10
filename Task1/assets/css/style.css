@@ -1,0 +1,43 @@
+  * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #442717;
+      padding: 7px 10px;
+    }
+
+    .icon img {
+      height: 50px;
+      border-radius: 50%;
+      padding: 0px 5px;
+    }
+
+    .links {
+      display: flex;
+      gap: 50px;
+    }
+
+    .links a {
+      color:#f5f0ea;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .search input {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
