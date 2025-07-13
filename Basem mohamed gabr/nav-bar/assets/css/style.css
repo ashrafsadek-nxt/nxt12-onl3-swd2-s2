@@ -1,0 +1,49 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.NavBar {
+    background-color: crimson;
+    font-family: Sans-Serif;
+    padding: 10px 15px;
+}
+
+.NavDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+/* حذف زرار sign in/up خلاص */
+
+.search {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 14px;
+}
