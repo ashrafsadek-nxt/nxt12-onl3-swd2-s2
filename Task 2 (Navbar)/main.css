@@ -1,0 +1,27 @@
+.navbar-brand{
+    width: 20%;
+}
+.logo{
+    width: 35px;
+}
+
+.navbar-nav{
+    display: flex;
+}
+.nav-item {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+
+      font-size: 18px;
+    font-weight: bold;
+   
+}
+.nav-link {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+
+
+   
+}
