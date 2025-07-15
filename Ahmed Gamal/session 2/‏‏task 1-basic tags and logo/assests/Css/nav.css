@@ -1,0 +1,41 @@
+ header {
+  background-color: rgba(18, 93, 255, 0.905);
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.logo {
+  width: 100px;
+  margin: 10px;
+  height: auto;
+  text-align: left;
+}
+
+.nav-links {
+  text-align: center;
+  list-style: none;
+  display: flex;
+   margin-left: 280px;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.nav-links li a:hover {
+   text-decoration: underline;
+   color:red;
+}
