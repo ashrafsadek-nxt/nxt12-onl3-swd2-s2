@@ -1,6 +1,6 @@
 .container{
     position: relative;
-    height: 10000px !important;
+    height: 10000px;
 }
 .btn{
     background-color:rgb(90, 85, 85);
