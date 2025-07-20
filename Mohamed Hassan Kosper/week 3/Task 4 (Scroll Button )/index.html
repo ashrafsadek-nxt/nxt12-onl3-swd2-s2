@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    </link>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 10%;">Scroll to show button</h1>
+    <div class="container">
+        <button class="btn"> ⬆ </button>
+    </div>
+
+    <script>
+        const button = document.querySelector('.btn');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 1) {
+                button.style.display = 'block';
+            }
+            else {
+                button.style.display = 'none';
+            }
+        })
+
+        button.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
