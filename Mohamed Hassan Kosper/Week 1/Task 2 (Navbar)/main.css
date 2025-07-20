@@ -4,7 +4,6 @@
 .logo{
     width: 35px;
 }
-
 .navbar-nav{
     display: flex;
 }
@@ -15,13 +14,9 @@
 
       font-size: 18px;
     font-weight: bold;
-   
 }
 .nav-link {
     display: flex;
     justify-content: space-between !important;
     align-items: center;
-
-
-   
 }
