@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 25px; 
+    right: 25px;
+    background-color: #111; 
+    color: #fff;
+    padding: 12px;
+    border-radius: 60%; 
+    text-decoration: none;
+    font-size: 18px; 
+    opacity: 0.75;
+    transition: all 0.4s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.scroll-to-top:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
