@@ -1,0 +1,58 @@
+div {
+    align-content: center;
+    justify-items: center;
+}
+
+
+#header{
+    background-color:cornflowerblue;
+    color:white;
+}
+
+.header-text{   
+    font-size:30px;
+    font-weight: 600;
+}
+
+#header ul{
+    list-style: none;
+    display: flex;
+    gap:30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-container{
+    background-color:gainsboro;
+    margin:20px 50px;
+    border:2px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    padding:15px;
+}
+
+.div-text{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer{
+    background-color: rgb(71, 71, 71);
+    height:100px;
+    color:white;
+    text-align: center;
+}
+
+.arrows {
+    position: fixed;
+    bottom: 25px;
+    right:25px;
+    padding:20px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
