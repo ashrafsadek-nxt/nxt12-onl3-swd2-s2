@@ -1,0 +1,21 @@
+body{
+    height: 1500px;
+}
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; 
+  margin-bottom: 40px; 
+  
+}
+
+.arrow-container img {
+  width: 80px;
+  position: fixed;
+  height: auto;
+}
+.bottom{
+    
+    margin-top: 1400px;
+    
+}
