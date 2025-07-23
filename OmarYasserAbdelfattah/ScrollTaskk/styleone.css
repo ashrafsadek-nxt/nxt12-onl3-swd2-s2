@@ -1,0 +1,26 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+    line-height: 2;
+    background-color: white;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 70%;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    padding: 10px 15px;
+    border-radius: 100%;
+    border: 2px solid black;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
