@@ -1,0 +1,92 @@
+div{
+    background-color: aqua;
+}
+#di{
+    background-color :blue;
+
+}
+.dv {
+    background-color: red;
+}
+#diTwo{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    height: 20vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid green;
+    border-left: 2px solid 
+    border-raduis: 5px;
+
+}
+#diThree{
+backgroun-color bisque;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 20vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid green;
+    border-left: 2px solid red;
+    border-right: 2px solid blue;
+}
+.inside{
+    background-color: lightgreen;
+    width 30%;
+    height: 30%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#difour{
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 20vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid green;
+    border-left: 2px solid red;
+    border-right: 2px solid blue;
+    border-radius: 5px;
+    dispaly : flex;
+    align-items: center;
+    justify-content: center;
+}
+.in {
+    background-color: lightgreen;
+    width: 20%;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#diFive {
+background-color: aliceblue;
+height: 10vh;
+margin-top: 10px;
+border: none;
+border-radius: 10px
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+#bg{
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-image: center;
+    background-size: cover;
+    opacity: 1;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+}
+h1{
+    color:red;
+}
