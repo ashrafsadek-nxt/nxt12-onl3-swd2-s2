@@ -1,0 +1,146 @@
+body{
+  background-color: #f2f2f2;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
+}
+
+h1{
+  color:#0d5be2;
+  font-size: 45px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 30px;
+  text-align: center;
+  
+}
+#signup-form{
+  background-color: #fefefe;
+  box-shadow: 0px 0px 5px -2px black;
+  border-radius: 5px;
+  height: 77vh;
+  padding: 6px;
+  width: 390px;
+  margin:auto ;
+
+}
+#signup-form h3{
+    font-weight: 600;
+    font-size: 22px;
+    margin: 5px;
+    text-align: center;
+}
+#signup-form #p{
+    color: rgb(115, 115, 115);
+    font-size: 15px;
+    text-align: center;
+    
+}
+hr{
+    border: 1px solid lightgray;
+}
+
+form #f-name, #sur-name {
+  width: 44%;
+  margin: 4px;
+  height: 3vh;
+ box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.347);
+ border-radius: 5px;
+ border: 1px solid lightgray;
+ padding: 5px;
+ margin-bottom: 15px;
+}
+form #f-name:hover, #sur-name:hover{
+   border: 1px solid #0d5be2;;
+
+} 
+#lbl{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+    margin: 10px;
+   
+    
+}
+#slct, #rdio{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+select{
+    width: 30%;
+    text-align: center;
+    margin-top: 8px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    height: 3vh;
+     box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.347);
+}
+.rd{
+     box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.347);
+      
+}
+.rdio-lbl{
+    font-size: 15px;
+     border: 1px solid lightgray;
+     border-radius: 5px;
+     padding: 4px;
+     width: 70px;
+     text-align: center;
+     box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.347);
+   
+}
+
+#em-ph, #pass{
+    width: 92%;
+  margin: 8px;
+  height: 3vh;
+ box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.347);
+ border-radius: 5px;
+ border: 1px solid lightgray;
+ padding: 5px;
+
+}
+#em-ph:hover, #pass:hover{
+     border: 1px solid #0d5be2;
+
+}
+.para{
+    color: rgb(76, 76, 76);
+    font-size: 12px;
+    margin: 10px;
+}
+.para span{
+    font-weight: 600;
+    color: #0d5be2;
+}
+
+button{
+    text-align: center;
+    margin: auto;
+    width: 65%;
+    background-color:#4bb13c;
+    border: none;
+     border-radius: 4px;
+    padding: 10px;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 17px;
+    margin-top: 5px;
+
+}
+button:hover{
+    background-color:#63b357;
+
+}
+#btn{
+    display: flex;
+    align-items: center;
+}
+
+    
+
+
+
