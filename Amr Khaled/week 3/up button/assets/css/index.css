@@ -1,0 +1,29 @@
+.up-btn{
+    position: fixed;
+    left:95%;
+    bottom: 10%;
+}
+.up-btn img{
+    width: 50px;
+}
+#navbar a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px 15px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 5vh;
+    background-color:antiquewhite;
+}
+.long-txt{
+    border: 3px;
+    border-style: double;
+    margin-right: 100px;
+}
