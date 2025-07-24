@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 2000px;
+  font-family: sans-serif;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.scroll-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.scroll-buttons a {
+  display: block;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.scroll-buttons a:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  padding: 20px;
+}
