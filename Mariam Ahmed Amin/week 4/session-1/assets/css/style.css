@@ -1,0 +1,107 @@
+body{
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+h1{
+  color:#0d5be2;
+  font-size: 45px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 200px;
+  
+
+}
+h4{
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  width: 70%;
+}
+#form-login{
+  margin-top: 200px;
+  background-color: #fefefe;
+  box-shadow: 0px 0px 5px -2px black;
+  border-radius: 5px;
+  height: 40vh;
+  text-align: center;
+ padding-right: 5px;
+ width: 350px;
+}
+
+form{
+  align-items: center;
+  padding: 8px;
+
+}
+form input{
+  width: 92%;
+  margin: 5px;
+  height: 3vh;
+ box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.347);
+ border-radius: 5px;
+ border: 1px solid lightgray;
+ padding: 5px;
+
+}
+form input:hover{
+   border: 1px solid #0d5be2;;
+
+}
+ #login{
+  width: 92%;
+  text-align: center;
+  margin: auto;
+  background-color:#0865fa;
+  border: none;
+  color: #fefefe;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+#login:hover{
+  background-color:#468af9;
+
+}
+#forgotten{
+  margin-top: 15px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #0865fa;
+   margin-bottom: 20px;
+
+}
+hr{
+    border: 1px solid lightgray;
+}
+ #signup{
+  text-align: center;
+  margin: auto;
+  background-color:#4bb13c;
+  border: none;
+  color: #fefefe;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+#signup:hover{
+    background-color:#63b357;
+
+}
+#create{
+  margin-top: 35px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+color: #3d3d3d;
+}
+span{
+  font-weight: 600;
+  color: #000;
+}
