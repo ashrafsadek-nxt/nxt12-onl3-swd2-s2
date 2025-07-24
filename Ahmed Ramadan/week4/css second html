@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assests/css/stylesecond.css">
+</head>
+<body>
+    <div>   
+        <p>first div without id or class</p>
+    </div>
+    <div>   
+        <p>second div without id or class</p>
+    </div>
+    <div class="dv"> 
+        <p>third div with class only</p>
+    </div>
+    <div id="di">   
+        <p>fourth div with id only</p>
+    </div>
+    <div class="dv">
+        <p>fifth div with class only</p>
+    </div>
+    <div id="difour">
+        <div class="in"></div>
+        <div class="in"></div> 
+        <div class="in"></div>
+        <div class="in"></div>
+    </div>
+    <div class="dififth">
+        <img src="/assests/images/1.jpg" alt="">
+        <img src="/assests/images/2.jpg" alt="">
+    </div>
+</body>
+</html>
