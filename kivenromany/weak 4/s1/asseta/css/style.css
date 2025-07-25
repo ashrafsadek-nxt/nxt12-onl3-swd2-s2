@@ -1,0 +1,84 @@
+body {
+    background-color: #f0f2f5;
+}
+#parent {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 98vh;
+    padding: 0px 20px;
+}
+.text {
+    max-width: 500px;
+    margin-top: 275px;
+}
+h1 {
+    color: #1877f2;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.des {
+    font-size: 27px;
+    color: #1c1e21;
+}
+.boxs {
+    max-width: 420px;
+    margin-top: 275px;
+}
+.boxs .forms {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 20px;
+}
+.forms input {
+    width: 95%;
+    font-size: medium;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    border: 1px solid #dddfe2;
+}
+#loog {
+    width: 100%;
+    background-color: #1877f2;
+    color: #fff;
+    height: 50px;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+#fp {
+    text-decoration: none;
+    color: #1877f2;
+    margin-bottom: 10px;
+    display: block;
+}
+hr {
+    margin: 20px 0px;
+}
+.create12 {
+    background-color: #42b72a;
+    color: white;
+    font-size: 17px;
+    padding: 12px;
+    width: 60%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.create-page {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.create-page a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
