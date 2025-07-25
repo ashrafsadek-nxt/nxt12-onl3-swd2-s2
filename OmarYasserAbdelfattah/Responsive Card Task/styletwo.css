@@ -1,0 +1,93 @@
+.btn {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    font-size: 0.8em;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgb(35, 6, 51);
+  box-sizing: border-box;
+  overflow: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.box:nth-child(1) { background: rgb(38, 94, 112); }
+.box:nth-child(2) { background: rgb(26, 77, 26); }
+.box:nth-child(3) { background: rgb(104, 34, 45); }
+.box:nth-child(4) { background: rgb(7, 39, 35); }
+
+.container:hover .box {
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.container:hover .box:hover {
+  opacity: 1;
+  background: black;
+  transform: scale(1.2);
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: rotate 9s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
