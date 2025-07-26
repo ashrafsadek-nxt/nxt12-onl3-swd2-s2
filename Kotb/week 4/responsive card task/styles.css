@@ -1,0 +1,111 @@
+
+.btn {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.box {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(134, 76, 76);
+    transition: opacity 0.3s ease;
+    border: 2px solid rgb(35, 6, 51);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate('angle');
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+
+.box:nth-child(1) {
+    background: rgb(11, 11, 11);
+}
+
+.box:nth-child(2) {
+    background: rgb(2, 143, 250);
+}
+
+.box:nth-child(3) {
+    background: rgba(52, 6, 203, 0.023);
+}
+
+.box:nth-child(4) {
+    background: rgb(127, 199, 190);
+}
+
+.container:hover .box {
+    opacity: 0.2;
+    transition: width 5s linear, opacity 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.container:hover .box:hover {
+    opacity: 1;
+    background: black;
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation-name: rotate;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box {
+        font-size: 0.8em;
+ }
+}
