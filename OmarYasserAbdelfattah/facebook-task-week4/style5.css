@@ -1,0 +1,162 @@
+body {
+  background-color: rgb(242, 242, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial;
+}
+
+.fb {
+  width: 300px;
+  padding-top: 5px;
+}
+
+section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 430px;
+  margin-bottom: 10px;
+}
+
+.border-two {
+  border-top: 2px solid rgba(12, 19, 233, 0.696);
+  border-radius: 0;
+}
+
+.first {
+  color: #1c1e21;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  gap: 10px;
+}
+
+input {
+  height: 35px;
+  border-radius: 7px;
+  border: 1px solid rgba(150, 150, 154, 0.888);
+  font-family: Arial;
+  padding-left: 10px;
+}
+
+.in1,
+.in2 {
+  width: 190px;
+}
+
+.in3 {
+  width: 95%;
+  margin: 10px auto;
+  display: block;
+}
+
+.in4,
+.in5 {
+  width: 20px;
+  margin-left: 10px;
+}
+
+section p {
+  font-weight: bold;
+  font-size: small;
+  margin-left: 15px;
+}
+
+span {
+  font-size: small;
+  margin-left: 15px;
+  color: black;
+}
+
+.border-five,
+.border-six {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.in6,
+.in7 {
+  width: 90%;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.62);
+  font-size: medium;
+}
+
+.r1 {
+  margin: 20px 15px 0 15px;
+  font-size: 11px;
+  opacity: .8;
+}
+
+a {
+  text-decoration: none;
+  color: #1c5fe3;
+}
+
+.fn1,
+.fn2 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+section button {
+  background-color: #00a400;
+  color: white;
+  border: 1px solid #00a400;
+  border-radius: 6px;
+  padding: 10px 32px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #009100;
+}
+
+.last {
+  font-size: 16px;
+  opacity: .9;
+}
+
+footer {
+  background-color: white;
+  padding: 70px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.finally {
+  font-size: 13px;
+  opacity: .9;
+  letter-spacing: .5px;
+  line-height: 17px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.finally2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.662);
+  margin: 20px auto;
+  padding-top: 40px;
+  max-width: 500px;
+}
+
+.meta {
+  font-size: 12px;
+  opacity: .7;
+}
