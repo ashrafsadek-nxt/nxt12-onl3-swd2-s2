@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Facebook Logo">
+        </div>
+    <div class="signup-container">
+        <form action="#">
+            <div class="form-group gender-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label for="female">Female <input type="radio" id="female" name="gender"></label>
+                    <label for="male">Male <input type="radio" id="male" name="gender"></label>
+                    <label for="custom">Custom <input type="radio" id="custom" name="gender"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Mobile number or email address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" placeholder="New password" required>
+            </div>
+
+            <p class="legal-text">
+                People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a>
+            </p>
+            <p class="legal-text">
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+            </p>
+
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+
+        <a href="login.html" class="login-link">Already have an account?</a>
+    </div>
+</body>
+</html>
