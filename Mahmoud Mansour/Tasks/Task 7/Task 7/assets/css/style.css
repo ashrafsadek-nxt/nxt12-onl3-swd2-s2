@@ -1,0 +1,201 @@
+body{
+    margin: 30px;
+    background-color: darksalmon;
+}
+#container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px ;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+p{
+    padding: 20px;
+    padding-top: 5px;
+}
+img{
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+button{
+    border: 2px solid rgb(165, 142, 114);
+    border-radius: 30px;
+    background-color: bisque;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 20%;
+}
+#box1{
+    border: 2px solid;
+    grid-row: 2/6;
+    grid-column: 3/5;
+    background-color: bisque;
+}
+#img1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#button1{
+    position: absolute;
+    left: 360px;
+    bottom: 220px;
+}
+#box2{
+    border: 2px solid;
+    grid-row: 2/6;
+    grid-column: 6/8;
+    background-color: bisque;
+}
+#img2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#button2{
+    position: absolute;
+    left: 660px;
+    bottom: 220px;
+}
+#box3{
+    border: 2px solid;
+    grid-row: 2/6;
+    grid-column: 9/11;
+    background-color: bisque;
+}
+#img3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#button3{
+    position: absolute;
+    left: 960px;
+    bottom: 220px;
+}
+#box4{
+    border: 2px solid;
+    grid-row: 2/6;
+    grid-column: 12/14;
+    background-color: bisque;
+}
+#img4{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#button4{
+    position: absolute;
+    left: 1260px;
+    bottom: 220px;
+}
+@media (max-width: 1024px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+  #box1{
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+  }
+  #box2{
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+  }
+  #box3{
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+  }
+  #box4{
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+  }
+
+  #button1{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #button2{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #button3{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #button4{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  #box1{
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+  #box2{
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+  #box3{
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+  #box4{
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  #button1{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #button2{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  } 
+   #button3{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }  
+  #button4{
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  } 
+}
