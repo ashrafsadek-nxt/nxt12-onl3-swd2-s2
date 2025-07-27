@@ -1,0 +1,181 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8e44ad; /* Purple background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* To position the logo */
+}
+
+/* Logo */
+.logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Containers for Signup and Login Forms */
+.signup-container, .login-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color: white; /* Add white background to the form container for better contrast */
+    padding: 30px; /* Add some padding around the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* General Form Element Styling */
+form {
+    width: 100%;
+    border-radius: 8px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    background-color: #f5f6f7;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #90949c;
+}
+
+/* Gender Selection Specifics */
+.gender-group {
+    text-align: left;
+}
+.gender-group > label {
+    font-size: 13px;
+    color: #606770;
+    margin-bottom: 5px;
+    display: block;
+}
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+}
+.gender-options label {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.gender-options label:first-child { margin-left: 0; }
+.gender-options label:last-child { margin-right: 0; }
+
+/* Legal & Informational Text */
+.legal-text {
+    font-size: 11px;
+    color: #777;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.legal-text a, .login-link, .forgot-link {
+    color: #8e3799;
+    text-decoration: none;
+}
+.legal-text a:hover, .login-link:hover, .forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-signup {
+    width: 50%;
+    background-color: #8e3799; /* Darker green */
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-login {
+    width: 100%;
+    background-color: #8e3799;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+.btn-create-account {
+    display: inline-block;
+    background-color: #8e3799;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Links */
+.login-link {
+    font-size: 17px;
+    display: block;
+}
+.forgot-link {
+    font-size: 14px;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Divider on Login Page */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.divider hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #dddfe2;
+}
+.divider span {
+    padding: 0 10px;
+    color: #606770;
+}
