@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(222, 220, 224);
+}
+
+.container {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.left-part {
+  width: 40%;
+}
+h1 {
+  color: royalblue;
+  font-size: 80px;
+}
+h3 {
+  color: black;
+  font-size: 30px;
+}
+.right-part {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 450px;
+  height: 370px;
+  box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.1),
+    10px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+input {
+  width: 380px;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 0px 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  border-radius: 10px;
+}
+input[type="submit"] {
+  background-color: royalblue;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  background-color: royalblue;
+}
+hr {
+  border: 1px solid #ccc;
+  width: 320px;
+  margin: 20px 0px;
+}
+.create-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  background-color: rgb(90, 197, 90);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 30px;
+  color: white;
+}
+span {
+  margin: 20px 0px;
+  font-size: 18px;
+  font-weight: 20px;
+}
