@@ -1,0 +1,49 @@
+.container-fluid{
+    width: 100%;
+}
+.row{
+    width: 90%;
+        display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5%;
+}
+.photo{
+    width: 100%;
+    height: 200px;
+}
+.btn{
+    cursor: pointer;
+    font-size: 15px;   
+    padding: 5px;
+    font-weight: bold;
+}
+.card{
+    width: 18% !important;
+    padding: 20px;
+    margin: 2%;
+    border: 2px solid rgb(30, 255, 0);
+}
+@media (max-width:1650px) {
+    .card{
+    width: 25% !important;
+}
+}
+@media (max-width:1182px) {
+    .card{
+    width: 40% !important;
+}
+}
+@media (max-width:834px) {
+    .card{
+    width: 38% !important;
+}
+}
+@media (max-width:699px) {
+    .card{
+    width:100% !important; 
+}
+.photo{
+    width: 100%;
+    height: 270px;
+}
+}
