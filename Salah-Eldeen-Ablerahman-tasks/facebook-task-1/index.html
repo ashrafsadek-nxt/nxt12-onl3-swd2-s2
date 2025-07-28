@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Create New Facebook</title>
+</head>
+<body>
+  <main class="create-new-account">
+    <div class="logo">
+      <img src="assets/images/4lCu2zih0ca.svg" alt="facebook logo" />
+    </div>
+
+    <div class="box">
+      <h2>Create a new account</h2>
+      <span class="sub">It's quick and easy.</span>
+      <form>
+        <div class="name-row">
+          <input type="text" name="first-name" placeholder="First name" required />
+          <input type="text" name="surname"    placeholder="Surname"    required />
+        </div>
+
+        <div class="dob-row">
+          <label>Date of birth</label>
+          <div class="dob-inputs">
+            <input type="number" name="day"   min="1"   max="31"  placeholder="Day" required />
+            <select name="month" required>
+              <option value="">Month</option>
+              <option value="1">Jan</option><option value="2">Feb</option>
+              <option value="3">Mar</option><option value="4">Apr</option>
+              <option value="5">May</option><option value="6">Jun</option>
+              <option value="7">Jul</option><option value="8">Aug</option>
+              <option value="9">Sep</option><option value="10">Oct</option>
+              <option value="11">Nov</option><option value="12">Dec</option>
+            </select>
+            <input type="number" name="year"  min="1900" max="2100" placeholder="Year" required />
+          </div>
+        </div>
+
+        <div class="gender-row">
+          <label>Gender</label>
+          <div class="gender-inputs">
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="custom"> Custom</label>
+          </div>
+        </div>
+
+        <input type="text" name="email"    placeholder="Mobile number or email address" required />
+        <input type="password" name="pass" placeholder="New password" required />
+
+        <button type="submit" class="btn-signup">Sign Up</button>
+
+        <p class="login-link">
+          <a href="#">Already have an account?</a>
+        </p>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
