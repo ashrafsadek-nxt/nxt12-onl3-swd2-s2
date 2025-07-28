@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left {
+  margin-right: 80px;
+}
+
+.logo {
+  font-size: 60px;
+  color: #1877f2;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 24px;
+  width: 400px;
+}
+
+.right {
+  background-color: white;
+  padding: 20px;
+  width: 360px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #1877f2;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.forgot {
+  display: block;
+  color: #1877f2;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.create-btn {
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 17px;
+  width: 60%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-page {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.create-page a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
