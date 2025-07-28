@@ -1,0 +1,194 @@
+#div1{
+    background-color: #ECF3FF;
+    height : 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+#div1 a{
+    text-decoration: none;
+    color: #2e5191;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#div1 a:hover{
+    text-decoration: underline;
+}
+#rr{
+    margin-top: -10px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#dd{
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+}
+#logo{
+    width: 30%;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;
+    background-color: #ECF3FF;
+    margin-left: 500px;
+
+
+}
+img{
+    background-color: transparent;
+    width: 300px;
+    height: 110px;   
+}
+#signup{
+    background-color: #ffffff;
+    width: 30%;
+    height: 550px;
+    margin-left: 500px;
+    margin-top: px;
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#gender-container label {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px; /* Fixed width for labels */
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: sans-serif;
+}
+
+
+#input-row {
+    margin-top: 10px; /* space above the row */
+    margin-bottom: 10px; /* space below the row */
+    margin-left: 5px;
+  display: flex;
+  gap: 10px; /* space between inputs */
+}
+
+#input-row input {
+  flex: 1; /* make them equal width */
+  padding: 8px;
+  font-size: 14px;
+}
+#gender-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+#email {
+    width: 95%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#password {
+    width: 95%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#signup-button {
+    background-color: #42B72A;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    height: 40px;
+    margin: 15px auto;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#signup-button:hover {
+    background-color: #36a420;
+}
+#ff {
+    color: #2e5191;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: center;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#birthdate {
+    width: 95%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#language {
+    font-size: 12px;
+    width: 50%;
+    margin-left: 250px;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    
+}
+#language a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+#language a:hover {
+    text-decoration: underline;
+}
+#links{
+    font-size: 12px;
+    width: 100%;
+    margin-left: 250px;
+    justify-content: center;
+    margin-top: 20px;
+}
+#links a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+#links a:hover {
+    text-decoration: underline;
+}
+#line{
+  margin-top: 30px; /* Push it down by 30px */
+}
+#meta{
+    margin-top: 20px;
+    color: gray;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
