@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #0e0e0e;
+  color: #d8d8d8;
+  line-height: 1.6;
+  padding: 10px;
+
+
+    font-family: 'Courier New', monospace;
+  background: url('../images/bg-texture.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #d8d8d8;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+
+header {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  color:#c97786;
+  font-size: 2.5rem;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #2a2a2a;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: ease-out 0.8s;
+}
+nav ul li a:hover{
+color:#ffcc00 ;
+font-size: larger;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+    padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+
+h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 200px;
+  border: 2px solid #c97786;
+  border-radius: 10px;
+  transition: 0.8s ease-in-out;
+ 
+}
+
+.gallery-grid img:hover{
+    cursor: pointer;
+    max-width: 220px;
+
+}
+
+#themes {
+  background-color: rgba(255, 255, 255, 0.03); 
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#quotes {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#quotes ul {
+  list-style-type: "💬 ";
+  padding-left: 20px;
+}
+
+#quotes li {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #f2f2f2;
+}
+
+
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
