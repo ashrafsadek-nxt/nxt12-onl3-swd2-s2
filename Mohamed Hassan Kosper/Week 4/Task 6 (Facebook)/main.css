@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10%;
+}
+body{
+    background-color:#f5f6f7;
+}
+.section1{
+    width: 50%;
+    margin-top: 5%;
+}
+h1{
+    color:#0866ff;
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+.section2{
+    width: 30%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.section2 input{
+    margin:20px;
+    padding: 15px;
+}
+ button:first-of-type{
+    background-color: #0866ff;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ button:first-of-type:hover{
+    background-color: #0d5ddd;
+ }
+a {
+    text-align: center;
+    padding: 5px 0px;
+    color: rgb(83, 83, 233);
+}
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline;
+}
+p span{
+    font-weight: bold;
+}
+hr{
+    border: 1px solid rgb(136, 134, 134);
+    width: 100%;
+}
+::placeholder{
+    font-size: 20px;
+}
+.Create{
+ background-color: #42b72a;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20%;
+}
+.Create:hover{
+    background-color: #2b8119;
+}
+@media (max-width:1500px) {
+    .section2{
+    width: 40%;
+    }
+}
+@media (max-width:1130px) {
+   .container{
+    flex-direction: column;
+   }
+     .section1{
+        margin-top: -5% !important;
+    width: 100%;
+    }
+      .section2{
+    width: 100%;
+    }
+}

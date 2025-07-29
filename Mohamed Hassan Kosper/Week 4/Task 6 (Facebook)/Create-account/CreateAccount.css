@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    flex-direction: column;
+    background-color:#f5f6f7;
+    height: 100%;
+}
+.section2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.section2 input{
+    margin:20px;
+    padding: 10px;
+    font-size: 18px;
+}
+.section2 h2{
+    text-align: center;
+}
+.section2 h4{
+    text-align: center;
+    color: #94989c;
+    font-size: 1.2rem;
+}
+.texts{
+    display: flex;
+    justify-content: center;
+}
+.question{
+    background-color: #94989c;
+    border-radius: 50%;
+    color: white;
+    padding: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.question:hover{
+    background-color: #66696b;
+}
+
+.signup{
+    background-color: #42b72a;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+.Login{
+    background-color: #0866ff;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 20px !important;
+    margin-left: 20%;
+    width: 60%;
+}
+@media (max-width:1618px) {
+    .section2{
+width: 50%;
+}
+}
+@media (max-width:1134px) {
+    .section2{
+width: 80%;
+}
+}
+@media (max-width:722px) {
+    .section2{
+width: 100%;
+}
+}
+@media (max-width:596px) {
+    .texts input ,.gender label {
+width: 100%;
+}
+.gender label {
+    border: none !important;
+}
+}
