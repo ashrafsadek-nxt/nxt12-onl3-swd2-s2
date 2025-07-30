@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="assets/css/css_js_first.css">
+</head>
+<body>
+    <h1>javascript</h1>
+    <h4 id="head"></h4>
+    <div id="dv"></div>
+    <ol>
+        <li>BASICS
+            <ul>
+                <li>variables</li>
+                <li>datatypes</li>
+                <li>input/output</li>
+                <li>casting</li>
+                <li>operators</li>
+                <li>conditions</li>
+                <li>loops</li>
+                <li>array</li>
+                <li>functions</li>
+            </ul>
+        </li>
+        <li>ADVANCE
+            <ul>
+                <li>OOP</li>
+                <li>Data Structure</li>
+            </ul>
+        </li>
+    </ol>
+    <h2>history</h2>
+    <pre>   2015 => ECMAScript => ES6</pre>
+    <h2>job</h2>
+    <dl>
+        <dt>dynamic</dt>
+        <dd>DOM</dd>
+        <dd>CSS</dd>
+        <dd>send and retrieve data to server</dd>
+        <dd>libs.</dd>
+    </dl>
+    <h2>JS ways</h2>
+    <ol>
+        <li>inline
+            <ul>
+                <li>
+                    <!-- inline -->
+                    <button onclick='alert("hello, iam alert from onclick event")'>save</button>
+                    <button ondblclick="document.write('aaaaa');">save</button>
+                </li>
+                <li>must have event like: onclick, ondblclick, ...</li>
+            </ul>
+        </li>
+        <li>internal
+            <ul>
+                <li>before /body</li>
+                <li>script /script</li>
+            </ul>
+        </li>
+        <li>external
+            <ul>
+                <li>external js file with extension .js</li>
+                <li>before /body</li>
+                <li>script src /script</li>
+            </ul>
+        </li>
+    </ol>
+    <input type="text" id="ipt" value="ahmed">
+    <input type="number" id="ipt2" value="33">
+    <p id="firstP"></p>
+    <p id="secondP"></p>
+    <!-- internal -->
+    <script>
+        document.getElementById('ipt').value = "aly";
+    </script>
+    <!-- external -->
+    <script src="assets/js/js_first.js"></script>
+</body>
+</html>
