@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* navbar home section */
+.nav-home {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.logo {
+    transition: all 1s ease;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+    color: chocolate;
+}
+
+.itemNavBar {
+    display: flex;
+}
+
+.itemNavBar a {
+    text-decoration: none;
+    color: white;
+    margin: 50px;
+    transition: all 1s ease;
+}
+
+.nav-home .itemNavBar li:hover {
+    transform: scale(1.2);
+}
+
+.nav-home li a:hover {
+    color: chocolate;
+
+}
+
+@media (max-width:992px) {
+    .nav-home .logo {
+        width: 20%;
+        overflow: hidden;
+    }
+
+    .nav-home .itemNavBar {
+        width:700px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+        .nav-home{
+        width: 70%;
+    }
+    .nav-home .logo {
+        width: 30%;
+        overflow: hidden;
+    }
+
+    .nav-home .itemNavBar {
+        width: 70%;
+    }
+}
+
+/* section home section */
+
+.section-home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.section-home .text h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.section-home .text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.text .links a {
+    text-decoration: none;
+    margin-right: 30px;
+    transition: all 1s ease;
+    display: inline-block;
+    padding: 10px;
+}
+
+.text .links a:hover {
+    transform: scale(1.7);
+}
+
+.section-home .photo img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+
+/* herozintel Line */
+.line {
+    display: block;
+    width: 60%;
+    margin: auto;
+
+}
+/* ============================= */
+.aboutme{
+    margin-top: 70px;
+    font-size: 20px;
+}
+.aboutme span{
+    color: chocolate;
+    font-weight: 800;
+}
+/* start section About Me */
+.section-about {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-about-photo img {
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+.footer-home{
+    margin-top: 100px;
+    background-color: rgb(175, 208, 255);
+    color: black;
+    width:100%;
+    height: 50vh;
+    border-radius: 100px 100px 0 0 ;
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+}
+.footer-home .links h2{
+    color: red;
+}
+.footer-home .links p{
+    padding-top: 40px;
+}
+/* =========================================== */
+
+        /* Responsive Queries */
+        @media (max-width: 992px) {
+            .section-home .photo img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .section-about-photo img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* .nav-home {
+                flex-direction: column;
+                align-items: flex-start;
+            } */
+
+            .itemNavBar {
+                flex-direction: row;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .itemNavBar li {
+                margin: 10px 0;
+            }
+
+            .section-home {
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+
+            .section-home .photo img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .section-about-photo img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-home .text h2 {
+                font-size: 24px;
+            }
+
+            .section-home .text p {
+                font-size: 16px;
+            }
+
+            .aboutme p {
+                font-size: 16px;
+            }
+        }
