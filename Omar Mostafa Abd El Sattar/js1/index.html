@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style4.css">
+    <title>javascript-1</title>
+</head>
+<body>
+<h1>Javascript</h1>
+<h4 id="head"></h4>
+<div id="dv"></div>
+<h2>JS ways</h2>
+<ol>
+    <li>inline
+        <ul>
+            <li><button onclick="alert('Alert function inline script')"> save </button> </li>
+            <li>must have event like onclick ,ondbclick,....</li>
+        </ul>
+    </li>
+
+    <li>internal
+        <ul>
+            <li>before /body </li>
+            <li>script</li>
+        </ul>
+    </li>
+
+    <li>external
+        <ul>
+            <li>external js file with extension .js</li>
+           <li>before /body </li>
+            <li>script + src </li>
+        </ul>
+    </li>
+</ol>
+   <input type="text" id="ipt" value="MM">
+   <input type="number" id="ipt2" value="33">
+   <p id="firstp"></p>
+   <p id="secondp"></p>
+   
+<!--internal-->
+<script>
+   document.getElementById('ipt').value="4444";
+</script>
+
+<!--external-->
+<script src="assets/js/script4.js"></script>
+
+</body>
+</html>
