@@ -1,0 +1,30 @@
+#container{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+body .light-mode {
+    background-color: #ffffff;
+    color: #333333;
+
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+    
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(149, 149, 172);
+    border: none;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color:rgb(173, 173, 192); 
+    padding: 11px;
+}
+
+
