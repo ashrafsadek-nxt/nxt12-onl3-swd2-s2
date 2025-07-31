@@ -1,0 +1,46 @@
+body{
+    background-color: burlywood;
+    text-align: center;
+    width:100%;
+    margin: 7px 0;
+}
+
+.main-cont img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main-cont{
+    width: calc(25% - 20px);
+    display: inline-block;
+    border: 2px solid grey;
+    text-align: center;
+    padding:6px;
+}
+
+.main-cont p{
+    text-align: left;
+}
+
+.main-cont button{
+    float: right;
+    padding:10px;
+    border:none;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .main-cont{
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px){
+    .main-cont{
+        width: calc(100% - 20px);
+    }
+}
