@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            background-color: white;
+            color:darkred;
+            height: 100px;
+        }
+
+        .dark{
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>CONTAINER TEXT</h1>
+        <button id="toggle" onclick="toggleMode()">toggle</button>
+    </div>  
+</body>
+
+<script>
+    function toggleMode(){
+    const contain = document.getElementById("container");
+    contain.classList.toggle('dark');
+}
+</script>
+
+</html>
