@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Sections */
+main section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Center About Section */
+#about {
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4b6cb7;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #182848;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Contact links */
+#contact a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #4b6cb7;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #182848;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
