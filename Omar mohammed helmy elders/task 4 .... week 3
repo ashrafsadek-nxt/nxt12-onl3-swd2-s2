@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="assests/Css/portfolio.css">
+  <link rel="stylesheet" href="assests/portfolio.css">
   <style>
     h1{
    color: black;
