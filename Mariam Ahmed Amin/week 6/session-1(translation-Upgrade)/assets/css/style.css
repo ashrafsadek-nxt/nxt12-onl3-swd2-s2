@@ -1,0 +1,67 @@
+body{
+        background-color: rgb(149, 149, 172); 
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+}
+
+#container{
+    display: grid;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid lightgray;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    padding: 20px;
+    background-color: white;
+
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(82, 82, 100);
+}
+input,select{
+    padding: 5px;
+}
+input:hover ,select:hover{
+    border: 2px solid  rgb(149, 149, 172);
+    box-shadow: 0px 0px 10px  rgb(149, 149, 172);
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(149, 149, 172);
+    border: none;
+    cursor: pointer;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+     font-size: 20px;
+     font-weight: 700;
+
+}
+button:hover{
+    background-color:rgb(173, 173, 192); 
+    padding: 15px;
+
+}
+ #discount{
+    display: none;
+    background-color: rgb(177, 231, 177);
+    padding: 5px;
+ }
+ h4{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color:rgb(173, 173, 192);  
+     border-radius: 10px;
+     padding: 5px;
+     width: 51%;
+     color: white;
+      display: none;
+ }
+
+
+
