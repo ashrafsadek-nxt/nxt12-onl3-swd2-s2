@@ -1,0 +1,19 @@
+#container{
+    margin-top:10vh; 
+    margin-left:45%;
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+}
+.title{
+    padding: 20px;
+}
+.dark{
+    background-color:rgb(51, 43, 43);
+    color: rgb(255, 255, 255);
+}
+body{
+    background-color: aliceblue;
+    color: blue;
+}
