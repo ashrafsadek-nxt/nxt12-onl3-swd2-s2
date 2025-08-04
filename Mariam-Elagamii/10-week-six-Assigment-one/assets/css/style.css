@@ -1,0 +1,32 @@
+body {
+    background-color: #fce4e4;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+select, input {
+    padding: 8px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+#discount-box {
+    background: #e0ffe0;
+    border-left: 4px solid #4caf50;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+}
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+button {
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff00a2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
