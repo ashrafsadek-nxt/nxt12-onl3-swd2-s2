@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+   <title>Translation Cost Calculator</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h2>Instant Translation Price Calculator</h2>
+
+    <div id="container">
+
+    <label for="native">native language</label>
+    <br>
+    <select id="native">
+        <option>French</option>
+        <option>Arabic</option>
+        <option>English</option>
+    </select>
+
+<br><br>
+    <label for="translated">translated language</label>
+     <br>
+    <select id="translated">
+        <option>French</option>
+        <option>Arabic</option>
+        <option>English</option>
+    </select>
+<br><br>
+
+    <label for="count">words count</label>
+     <br>
+    <input type="number" id="count" name="" >
+    <br><br>
+
+      <label for="coupon">coupon</label>
+     <br>
+    <input type="text" id="coupon" name="" >
+      
+     <br> <p id="discount">Discount: 30% </p> 
+
+
+<br> <br>
+    <button id="priceBtn" onclick="getPrice()">get price</button>
+
+<h4 id="price" class="showprice"></h4>
+</div>
+
+
+
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
