@@ -1,0 +1,46 @@
+<!-- Main HTML document for Translate Form web app -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for page info and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Translate Form" />
+    <meta name="keywords" content="translate" />
+    <meta name="author" content="Abelrahman Megahed" />
+    <title>Translate</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Page title -->
+    <h1>Translate Form</h1>
+
+    <!-- Translation form -->
+    <form>
+      <!-- Source language input -->
+      <label for="source">Source</label>
+      <input type="text" name="source" id="source" />
+      <!-- Target language input -->
+      <label for="target">Target</label>
+      <input type="text" name="target" id="target" />
+      <!-- Word count input -->
+      <label for="count">Count</label>
+      <input type="number" name="count" id="count" />
+      <!-- Coupon code input -->
+      <label for="copoun">Copoun</label>
+      <input type="text" name="copoun" id="copoun" />
+
+      <!-- Submit button -->
+      <button type="submit" id="btn">Submit</button>
+
+      <div></div>
+    </form>
+
+    <!-- Result display area -->
+    <div id="result"></div>
+
+    <!-- Link to main JavaScript file -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
