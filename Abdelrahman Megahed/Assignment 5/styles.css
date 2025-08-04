@@ -1,0 +1,12 @@
+#btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #242020;
+  color: white;
+}
