@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 360px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #1877f2;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-box button:hover {
+  background-color: #145dbf;
+}
+
+.login-box .link {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-box .link:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border-top: 1px solid #dddfe2;
+  margin: 20px 0;
+}
+
+.create-account {
+  background-color: #42b72a;
+  margin-top: 10px;
+}
+
+.create-account:hover {
+  background-color: #36a420;
+}
