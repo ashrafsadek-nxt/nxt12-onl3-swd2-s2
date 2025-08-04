@@ -1,0 +1,15 @@
+#change{
+background-color:blueviolet;
+color: rgb(210, 13, 13);
+border: solid 1px;
+border-radius: 5px;
+}
+.dark{
+background-color: black;
+color: aliceblue;
+}
+
+.light{
+background-color: whitesmoke;
+color: rgb(0, 255, 255);
+}
