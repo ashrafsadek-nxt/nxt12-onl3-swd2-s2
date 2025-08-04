@@ -1,0 +1,45 @@
+<!-- translation price app-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Calculate</title>
+  </head>
+  <body>
+    <!-- source language -->
+    <div class="trans" id="tran">
+      <label for="source">Source</label>
+      <select id="source" name="source">
+        <option value="en">en</option>
+        <option value="ar">ar</option>
+        <option value="fr">fr</option>
+      </select>
+
+      <!-- target language -->
+      <label for="target">Target</label>
+      <select id="target" name="target">
+        <option value="en">en</option>
+        <option value="ar">ar</option>
+        <option value="fr">fr</option>
+      </select>
+
+      <!-- pricing elements -->
+
+      <label for="word-count">Word Count</label>
+      <input type="text" id="count" />
+      <label for="coupon">Coupon</label>
+      <input type="text" id="coupon" />
+      <label for="discount">Discount</label>
+      <input type="text" id="discount" />
+      
+      <button type="submit" id="btn" >Caululate</button>
+    </div>
+    <!-- total price -->
+    <h3 id="result" class="result"></h3>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
