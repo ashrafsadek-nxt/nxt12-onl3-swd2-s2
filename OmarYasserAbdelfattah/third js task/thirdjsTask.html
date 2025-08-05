@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Omar Yasser</title>
+    <link rel="stylesheet" href="assets/css/thirdjsTask.css">
+</head>
+<body class="light-mode">
+
+    <label>Source Language</label>
+    <select id="source">
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+        <option value="fr">French</option>
+    </select>
+    <br><br>
+
+    <label>Target Language</label>
+    <select id="target">
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+        <option value="fr">French</option>
+    </select>
+    <br><br>
+
+    <label>Word Count</label>
+    <input type="number" id="count" />
+    <br><br>
+
+    <label>Coupon (Optional)</label>
+    <input type="text" id="coupon" oninput="toggleDiscount()"/>
+    <br><br>
+
+    <div id="discountDiv">
+        <label>Discount (%)</label>
+        <input type="number" id="discount" value="0"/>
+    </div>
+    <br><br>
+
+    <button onclick="getPrice()" id="priceBtn">Get Price</button>
+    <h4 id="price"></h4>
+
+    <button onclick="toggleMode()" id="modeBtn">Switch Mode</button>
+
+    <script src="assets/js/thirdjsTask.js"></script>
+</body>
+</html>
