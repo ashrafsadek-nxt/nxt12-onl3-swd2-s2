@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    color: rgb(1, 1, 12);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --bg-color: aliceblue;
+    --text-color: rgb(2, 2, 31);
+}
+
+/* Container styles */
+#container {
+    margin-top: 10vh;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+/* Button styles */
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Title styles */
+.title {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Body styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark mode theme */
+.dark {
+    --bg-color: rgb(10, 6, 6);
+    --text-color: rgb(255, 255, 255);
+}
