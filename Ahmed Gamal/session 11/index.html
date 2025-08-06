@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Translation price</title>
+  <link rel="stylesheet" href="assests/css/css.css">
+</head>
+<body>
+    <div>
+     <label for="source_lang">source</label>
+     <select id="source_lang" name="source">
+      <option value="ar">ar</option>
+      <option value="en">en</option>
+      <option value="fr">fr</option>
+    </select>
+
+     <label for="target_lang">target</label>
+     <select id="target_lang" name="target">
+      <option value="ar">ar</option>
+      <option value="en">en</option>
+      <option value="fr">fr</option>
+    </select>
+    
+     <label for="wordcount">word count</label>
+     <input type="number" id="wordcount">
+     
+     <label for="copoun">copoun</label>
+     <input type="text" id="copoun">
+     
+     <div id="discountdiv">
+      <p>Discount : <span id="discount"></span>
+      </p>
+     </div>
+    </div>
+    <br>
+  <button id="btn" >get price</button>
+
+  <h4 id="result" >the price is : 0</h4>
+<script src="assests/js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: aliceblue;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  input, select {
+    padding: 10px 12px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  #btn {
+    padding: 15px 30px;
+    background-color: #007bff;
+    border-radius: 35px;
+    color: white;
+    border: none;
+  }
+
+  #discountdiv {
+    display: none;
+    color:black;
+    font-weight: bold;
+  }
+
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
