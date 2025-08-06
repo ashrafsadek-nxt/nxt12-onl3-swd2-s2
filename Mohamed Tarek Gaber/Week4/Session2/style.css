@@ -43,12 +43,11 @@ section{
     min-height: 100vh;
     align-items: center;
     display: flex;
-    background-image: url('../images/2.jpg');
+    background-image:url('1.png');
     background-repeat: no-repeat;
     background-size:auto;
     background-position: center right;
-
-
+    background-attachment: fixed;
    
 
 }
@@ -70,7 +69,7 @@ section{
     color: black;
     font-size: 2em;
     font-weight: 700;
-    letter-spacing:1px ;/*spaces between the letters*/
+    letter-spacing:1px ;/spaces between the letters/
     margin-top: 10px;
     margin-bottom: 30px;
 
@@ -175,4 +174,207 @@ section{
 .footer.social-icons a{
     font-size: 1.3em;
     padding: 0 12px 0 0;
+}
+/* Responsive for tablets and mobile */
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    section {
+        padding: 100px 40px;
+    }
+
+    .main {
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .main h2,
+    .main h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navigation a {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    section {
+        padding: 100px 40px;
+    }
+
+    .main {
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .main h2,
+    .main h3 {
+        text-align: center;
+        color: #111;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navigation a {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .main h2,
+    .main h3 {
+        color: #111;
+        font-weight: 800;
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    section {
+        padding: 100px 40px;
+    }
+
+    .main {
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .main h2,
+    .main h3 {
+        text-align: center;
+        color: white;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navigation a {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .main h2,
+    .main h3 {
+        color: white;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4em;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+        color: white;
+        font-weight: 800;
+    }
+
+    .main h2 span {
+        font-size: 1.3em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+        color: white;
+        font-weight: 800;
+    }
+
+    .main-btn {
+        font-size: 1em;
+        padding: 0.7em 1.5em;
+    }
+
+    .icon {
+        font-size: 5em;
+    }
+
+    .contact.info p {
+        font-size: 1.2em;
+    }
+
+    .footer-title {
+        font-size: 1.1em;
+    }
 }
