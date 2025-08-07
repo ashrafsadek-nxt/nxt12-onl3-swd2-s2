@@ -1,0 +1,38 @@
+.products-grid {
+    display: none;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
