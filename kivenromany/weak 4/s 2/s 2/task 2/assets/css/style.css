@@ -1,0 +1,51 @@
+body {
+    background-color: bisque;
+    margin: 0px;
+    padding: 20px;
+}
+.contiuner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+.dv1,
+.dv2,
+.dv3,
+.dv4 {
+    background-color: rgb(223, 221, 226);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+p {
+    font-size: 19px;
+}
+#bt1 {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 8px 16px;
+    color: white;
+    cursor: pointer;
+}
+#bt1:hover {
+    background-color: #0056b3 
+}
+@media (max-width: 992px) {
+  .contiuner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .contiuner {
+    grid-template-columns: 1fr;
+  }
+}
+
