@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+#toggle-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
