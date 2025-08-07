@@ -1,0 +1,13 @@
+.container{
+    width: 90%;
+    height: 100vh;
+    
+}
+.light{
+    background-color: aliceblue;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
