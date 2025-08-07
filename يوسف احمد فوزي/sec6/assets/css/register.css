@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #dadde1;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+
+.fb-logo-link {
+  color: #1877f2;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 20px 10px;
+}
+
+.register-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 432px;
+}
+
+.register-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c1e21;
+  margin: 0 0 8px 0;
+  line-height: 38px;
+}
+
+.register-header p {
+  font-size: 15px;
+  color: #606770;
+  margin: 0 0 16px 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.name-row {
+  display: flex;
+  gap: 12px;
+}
+
+.input-field {
+  padding: 11px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #f5f6f7;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-field:focus {
+  border: 1px solid #1877f2;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.half-width {
+  flex: 1;
+}
+
+.full-width {
+  width: 95%;
+}
+
+.birthday-section,
+.gender-section {
+  margin: 8px 0;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #606770;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.birthday-row {
+  display: flex;
+  gap: 12px;
+}
+
+.select-field {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #f5f6f7;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23606770' d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 32px;
+}
+
+.select-field:focus {
+  border: 1px solid #1877f2;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.gender-row {
+  display: flex;
+  gap: 12px;
+}
+
+.gender-option {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #f5f6f7;
+}
+
+.gender-option:hover {
+  background: #e4e6ea;
+}
+
+.gender-option input[type="radio"] {
+  margin: 0;
+}
+
+.terms-text {
+  font-size: 11px;
+  color: #777;
+  line-height: 14px;
+  margin: 16px 0 0 0;
+}
+
+.signup-btn {
+  background: #00a400;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 80px;
+  margin: 24px auto 16px auto;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: block;
+  width: fit-content;
+}
+
+.signup-btn:hover {
+  background: #42b883;
+}
+
+.login-link {
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+
+.login-link a {
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .register-box {
+    margin: 10px;
+    padding: 16px;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .birthday-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .gender-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .register-header h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .signup-btn {
+    padding: 8px 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-content {
+    padding: 12px 10px;
+  }
+
+  .fb-logo-link {
+    font-size: 28px;
+  }
+}

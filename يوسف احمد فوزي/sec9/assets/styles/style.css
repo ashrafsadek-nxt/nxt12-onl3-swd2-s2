@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 40px 20px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+div {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Price List Section */
+.from-to-price {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.from-to-price h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.from-to-price span {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  padding: 6px 12px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Form Section */
+form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.input-group select,
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.input-group select:focus,
+.input-group input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button#calculate {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button#calculate:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button#calculate:active {
+  background-color: #2471a3;
+  transform: translateY(0);
+}
+
+/* Total Price */
+.total-price {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.price {
+  color: #27ae60;
+  margin-left: 10px;
+}

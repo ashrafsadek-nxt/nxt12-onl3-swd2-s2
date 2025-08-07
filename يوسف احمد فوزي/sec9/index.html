@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div id="from-to-price" class="from-to-price">
+        <h2>Price List</h2>
+        <span> En to Ar : 0.2$</span>
+        <span> En to Fr : 0.3$</span>
+        <span> Ar to En : 0.2$</span>
+        <span> Ar to Fr : 0.3$</span>
+        <span> Fr to En : 0.2$</span>
+        <span> Fr to Ar : 0.3$</span>
+      </div>
+      <form>
+        <span id="error" class="error-message"></span>
+        <div>
+          <div class="input-group">
+            <label for="from"> From Language</label>
+            <select name="from" id="from">
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="to"> To Language</label>
+            <select name="to" id="to">
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div class="input-group">
+            <label for="count"> Word Count</label>
+            <input type="number" name="count" id="count" />
+          </div>
+          <div class="input-group">
+            <label for="coupon">Coupon Code</label>
+            <input type="text" name="coupon" id="coupon" />
+          </div>
+        </div>
+        <div class="input-group">
+          <button type="submit" id="calculate">Calculate</button>
+        </div>
+      </form>
+      <div id="total-price" class="total-price">
+        <span>Total Price: </span>
+        <span id="price" class="price">0.0$</span>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
