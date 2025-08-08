@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.cont {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 30px;
+    font-size: 20px;
+    transition: all 1.2s linear;
+}
+
+.cont .btn:hover {
+    transform: scale(1.2);
+    margin-right: 30px;
+    box-shadow: 3px 2px 2px rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.cont .change {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    transition: all 1.2s linear;
+}
+
+.cont .change:hover {
+    transform: scale(1.2);
+    margin-left: 30px;
+    box-shadow: 3px 2px 2px rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content div{
+    background-color: rgb(180, 180, 180);
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+
+} 
+.content div img{
+    border-radius: 30px;
+}
+.content div button{
+    background-color: dodgerblue;
+    float: right;
+    clear: both;
+    border: none;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color : white;
+    font-size: 20px;
+}
+.hhh{
+    background-color: blueviolet;
+}
