@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="My portfolio"/>
+  <meta name="keywords" content="Frontend development, work, portfolio"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div id="container">
+    <div id="first">
+      <div class="input-group">
+        <label for="sourceInput">Source:</label>
+        <input type="text" id="sourceInput" name="source" list="src_lang" placeholder="Type or select...">
+        <datalist id="src_lang">
+          <option value="Arabic">
+          <option value="French">
+          <option value="English">
+        </datalist>
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="targetInput">Target:</label>
+        <input type="text" id="targetInput" name="target" list="trg_lang" placeholder="Type or select...">
+        <datalist id="trg_lang">
+          <option value="Arabic">
+          <option value="French">
+          <option value="English">
+        </datalist>
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="countInput">Word count:</label>
+        <input type="number" id="countInput" name="count" placeholder="How many words">
+      </div>
+      <br>
+    </div>
+    <br>
+    <div id="second">
+      <div class="input-group">
+        <label for="couponInput">Coupon:</label>
+        <input type="text" id="couponInput" name="Coupon" placeholder="Enter a valid Coupon">
+      </div>
+      <br>
+      <div id="dis">
+        <label for="dis">Discount amount:</label>
+        <span id="discountValue"></span>
+      </div>
+      <br>
+      <div id="sum">
+        <label for="sum">Total:</label>
+        <span id="Total"></span>
+      </div>
+    </div>
+    <div id="button">
+      <button id="button">
+        Get
+      </button>
+    </div>
+  </div>
+  <script src="assets/js/java.js"></script>
+</body>
+</html>

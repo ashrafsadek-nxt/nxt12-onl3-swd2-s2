@@ -1,0 +1,68 @@
+#container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+#first{
+  margin-bottom: 20px;
+}
+#second{
+    margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #333;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+  border-color: #888;
+}
+datalist {
+  font-size: 14px;
+}
+#sum{
+  margin-top: 10px;
+  font-weight: bold;
+  color: #222;
+}
+#dis{
+  margin-top: 10px;
+  font-weight: bold;
+  color: #222;
+}
+#Total {
+  margin-left: 5px;
+}
+#button {
+  text-align: center;
+}
+#button button {
+  padding: 8px 20px;
+  font-size: 15px;
+  background-color: whitesmoke;
+  border: 1px solid rgb(94, 93, 93);
+  border-radius: 6px;
+  cursor: pointer;
+}
+#button button:hover {
+  background-color: wheat;
+}
+#dis {
+  display: none;
+}
