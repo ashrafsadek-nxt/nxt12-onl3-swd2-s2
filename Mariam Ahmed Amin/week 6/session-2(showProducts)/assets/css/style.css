@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+body{
+     background-color: rgb(214, 204, 191);
+}
+h1{
+    text-align: center;
+    color:white;
+    margin-top: 50px 0;
+   
+
+}
+#btn1{
+    background-color: rgb(142, 134, 134);
+    border-radius: 10px;
+    border:none;
+    color: white;
+    padding: 9px 15px;
+    font-weight: 800;
+    transition: ease-in-out 0.2s ;
+    box-shadow: 0px 0px 6px rgba(142,134,134,0.9);
+    cursor: pointer;
+    margin:0 auto 50px auto;
+    display: block;
+}
+#btn1:hover , .btn2:hover{
+    background-color: rgb(184, 176, 176);
+    transform: scale(1.05);
+
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: auto;
+   width: 95%;
+   margin-bottom: 100px;
+   display: none;
+    
+}
+h4{
+    font-size: 0.8rem;
+     text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+     margin-bottom: 10px;
+    color:rgb(142, 134, 134);
+    margin-top: 0;
+}
+.hp34{
+margin-bottom: 40px;
+  
+}
+
+#container .products{
+     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+     background-color: rgba(256,256,256,0.8);
+    border-radius: 10px;
+     padding: 20px;
+     align-content: center;
+     text-align: center;
+    
+
+}
+#container .products img{
+     border-radius: 10px;
+     max-width: 80%;
+      height: auto;
+    transition: ease-in-out 0.2s ;
+    box-shadow: 0px 0px 6px rgba(142,134,134,0.9);
+    margin-top: 10px;
+    cursor: pointer;
+  
+}
+#container .products img:hover{
+    transform: scale(1.05);
+}
+
+#container .products p{
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#container .products span{
+    font-weight: 800;
+}
+.btn2{
+    background-color: rgb(142, 134, 134);
+    border-radius: 10px;
+    border:none;
+    color: white;
+    padding: 9px 15px;
+    font-weight: 800;
+    transition: ease-in-out 0.2s ;
+    box-shadow: 0px 0px 6px rgba(142,134,134,0.9);
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+
+}
+
+@media (min-width: 600px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    #container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
