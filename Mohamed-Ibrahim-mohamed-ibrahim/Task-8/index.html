@@ -1,0 +1,48 @@
+    <!DOCTYPE html>  <!-- hthml5 -->
+    <html lang="en" dir="ltr">
+    <head> 
+        <!-- configration //   link pages ,  -->
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="build websites">
+        <meta name="keywords" content="web development, HTML, CSS, JavaScript, frontend, backend">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+          <div id="container">
+           <form action="">
+            <label for="source">Source</label>
+            <select name="source" id="source">
+                <option value="ar">ar</option>
+                <option value="fr">fr</option>
+                <option value="en">en</option>
+            </select>
+            <br>
+            <br>
+            <label for="Target">Target</label>
+            <select name="Target" id="Target">
+                <option value="">ar</option>
+                <option value="">fr</option>
+                <option value="">en</option>
+            </select>
+            <br>
+            <br>
+            <label for="wordcount">wordcount</label>
+            <input type="number" id="wordcount">
+            <br>
+            <br>
+            <label for="coupon">coupon</label>
+            <input type="text" id="coupon">
+            <button  type="button" onClick="getTotalprice()">GET_TOTAL_PRICE</button>
+            
+           </form>
+            <div id="Total_Price">
+                  
+            </div>
+          </div>
+      <script src="assets/js/action.js"></script>
+    </body>
+    </html>
