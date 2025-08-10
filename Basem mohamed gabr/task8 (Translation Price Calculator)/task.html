@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Translation Price Calculator</title>
+    </head>
+    <body>
+        <h1>Translation Price Calculator</h1>
+
+        <div>
+            <label>Source Language:</label>
+            <select id="sourceLanguage">
+                <option value>Select Source Language</option>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Target Language:</label>
+            <select id="targetLanguage">
+                <option value>Select Target Language</option>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Text to Translate:</label>
+            <textarea id="textInput"
+                placeholder="Enter your text here..."></textarea>
+        </div>
+        <br><br>
+        <div>
+            <label>Word Count:</label>
+            <input type="text" id="wordCount" readonly>
+        </div>
+        <br>
+        <div>
+            <label>Coupon Code:</label>
+            <input type="text" id="couponCode" placeholder="Enter coupon code">
+        </div>
+        <br>
+        <div>
+            <label>Discount:</label>
+            <input type="text" id="discount" readonly>
+        </div>
+        <br>
+        <div>
+            <label>Total Price:</label>
+            <input type="text" id="totalPrice" readonly>
+        </div>
+        <br>
+
+        <script src="assets/js/taskScript.js"></script>
+    </body>
+</html>
