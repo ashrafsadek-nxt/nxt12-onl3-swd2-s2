@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Translation Price Calculator — Demo</title>
+  <link rel="stylesheet" href="Assets/css/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2 style="text-align:center;margin:0 0 12px">Translation Price Calculator</h2>
+
+    <label for="fromLang">From</label>
+    <select id="fromLang">
+      <option value="en">English</option>
+      <option value="ar">Arabic</option>
+      <option value="fr">French</option>
+    </select>
+
+    <label for="toLang">To</label>
+    <select id="toLang">
+      <option value="ar">Arabic</option>
+      <option value="en">English</option>
+      <option value="fr">French</option>
+    </select>
+
+    <label for="wordsCount">Word Count</label>
+    <input id="wordsCount" type="number" min="1" placeholder="Enter number of words" />
+
+    <label for="couponCode">Coupon (optional)</label>
+    <input id="couponCode" type="text" placeholder="Type coupon code to apply discount" />
+
+    <button id="calcBtn">Calculate Price</button>
+
+    <div id="discountSection" class="discount-msg">10% discount applied!</div>
+    <div id="output" class="result"></div>
+    <div id="error" class="err" style="display:none"></div>
+  </div>
+
+  <script src="Assets/js/main.js">
+   
+  </script>
+</body>
+</html>

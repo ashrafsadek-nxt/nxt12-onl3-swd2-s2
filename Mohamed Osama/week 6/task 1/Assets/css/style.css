@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #8e44ad, #3498db);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 340px;
+}
+label {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.discount-msg {
+  color: #27ae60;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+.result {
+  margin-top: 14px;
+  text-align: center;
+  font-weight: 800;
+  color: #2c3e50;
+}
+.err {
+  color: #c0392b;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
