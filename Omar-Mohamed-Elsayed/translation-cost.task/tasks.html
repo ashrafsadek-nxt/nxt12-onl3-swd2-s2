@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+
+    <h1>Translation Cost Estimator</h1>
+
+    <div>
+        <label for="fromLang">From Language:</label>
+        <select id="fromLang">
+            <option value="">-- Select --</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="toLang">To Language:</label>
+        <select id="toLang">
+            <option value="">-- Select --</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="userText">Text:</label>
+            <textarea id="userText" placeholder="Type your text here..."></textarea>
+    </div>
+    <br>
+    <div>
+        <label>Word Count:</label>
+        <input type="text" id="countWords" readonly>
+    </div>
+    <br>
+    <div>
+        <label for="promoCode">Promo Code:</label>
+        <input type="text" id="promoCode" placeholder="Enter promo code">
+    </div>
+    <br>
+    <div>
+        <label>Discount Applied:</label>
+        <input type="text" id="discountValue" readonly>
+    </div>
+    <br>
+    <div>
+        <label>Estimated Cost:</label>
+        <input type="text" id="finalCost" readonly>
+    </div>
+
+        
+    <script src="assets/js/tasks.js"></script>
+</body>
+    
+</html>
