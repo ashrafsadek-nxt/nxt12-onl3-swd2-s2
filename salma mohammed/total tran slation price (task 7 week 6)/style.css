@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(184, 218, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ select, input, button{
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-right: 50px;
+    border-radius: 10px;
+ }
+
+button{
+    background-color: rgb(107, 199, 230);
+    cursor: pointer;
+    border: 2px solid;
+}
+
+#output {
+    text-align: center;
+}
