@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="title">Price Switcher</h1>
+    <div class="container box">
+        <div id="container">
+            <div class="language-selector">
+                <label for="language">Source:</label>
+                <select id="language-source">
+                    <option value="ar" selected>AR</option>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+            <div class="language-selector">
+                <label for="language">Target:</label>
+                <select id="language-target">
+                    <option value="ar">AR</option>
+                    <option value="en" selected>EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+        <div id="container">
+            <label for="price">Price:</label>
+            <div class="price-section">
+                <input type="number" id="price-source" placeholder="Enter price" />
+            </div>
+            <label for="coupon">Coupon:</label>
+            <div class="coupon-section">
+                <input type="text" id="coupon" placeholder="Enter coupon" />
+            </div>
+        </div>
+    </div>
+    <div class="word-section">
+        <label for="word-count">Word Count:</label>
+        <span id="word-count">0</span>
+    </div>
+    <div class="discount-section">
+        <span>Discount: </span>
+        <span id="discount-value">0</span>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
