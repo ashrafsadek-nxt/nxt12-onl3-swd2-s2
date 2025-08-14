@@ -77,7 +77,7 @@ button:hover {
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 .products-list {
@@ -99,4 +99,10 @@ button:hover {
 
 .products-list li:hover {
     box-shadow: var(--shadow-hover);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
