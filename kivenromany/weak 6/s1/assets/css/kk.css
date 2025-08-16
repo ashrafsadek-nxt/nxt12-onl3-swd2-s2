@@ -1,0 +1,15 @@
+#par {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.child {
+    width: 23%;
+    height: 15vh;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+}
