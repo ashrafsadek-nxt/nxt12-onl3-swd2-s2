@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="My portfolio" />
+    <meta name="keywords" content="Frontend development, work, portfolio" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div id="content">
+        <header id="start">
+            <h1>My Portfolio</h1>
+            <button id="menu-toggle">☰</button>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am Mahmoud Mansour, a frontend developer who uses the React framework.</p>
+            </section>
+
+            <section id="work">
+                <h2>My Work</h2>
+                <div class="slider">
+                    <div class="slide active">This is my first HTML project.</div>
+                    <div class="slide">Another project (React App).</div>
+                    <div class="slide">Portfolio Design (CSS only).</div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prev">◀</button>
+                    <button id="next">▶</button>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </section>
+
+            <section id="contacts">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required><br>
+                    <input type="email" id="email" placeholder="Your Email" required><br>
+                    <textarea id="message" placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+                <p id="formResponse"></p>
+            </section>
+        </main>
+
+        <footer>
+            <section id="rights">
+                <span>&copy; All rights reserved.</span>
+            </section>
+        </footer>
+    </div>
+    <script src="assets/js/java.js"></script>
+</body>
+</html>
