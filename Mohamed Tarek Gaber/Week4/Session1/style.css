@@ -78,3 +78,11 @@ body {
 .sign-up:hover {
   background-color: #36a420;
 }
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link a{
+    text-decoration: none;
+}
