@@ -1,82 +1,82 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: white;
+    font-family: Arial, sans-serif;
+    background-color: white;
 
 }
 
 .container {
-  max-width: 400px;
-  margin: 50px auto;
-  text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
 }
 
 .logo {
-  color: blue;
-  font-size: 40px;
-  font-weight: bold;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .form-box {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 
 
 .input-group {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .input-group input,
 .input-group select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border: 1px solid gainsboro;
-  border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gainsboro;
+        border-radius: 4px;
 }
 
 .input-group input[type="text"] {
-  width: 48%;
+    width: 48%;
 }
 .dob select {
-  width: 32%;
-  margin-right: 2%;
+    width: 32%;
+    margin-right: 2%;
 }
 
 .gender {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .gender label {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 5px;
-  text-align: center;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-align: center;
 }
 
 
 
 .sign-up {
-  width: 100%;
-  padding: 10px;
-  background-color: #42b72a;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .sign-up:hover {
-  background-color: #36a420;
+    background-color: #36a420;
 }
 .link{
     display: flex;
@@ -84,5 +84,11 @@ body {
     justify-content: center;
 }
 .link a{
+    text-decoration: none;
+}
+span{
+    color: blue;
+}
+a{
     text-decoration: none;
 }
