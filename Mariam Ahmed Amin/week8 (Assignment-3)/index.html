@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/lib/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/sign.png" alt="Cafe Logo" width="40" height="40" class="d-inline-block align-text-top">
+    My Cafe
+    </a>   
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+  <div class= "hero-content">
+    <h1 class="text-white">Welcome to My Cafe</h1>
+    <p class="text-white">Best coffee in town ☕</p>
+    <button class="btn " id="orderBtn">Order Now</button>
+  </div>
+</section>  
+
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow menu-card">
+          <img src="assets/images/espresso.jpeg" class="card-img-top" alt="Espresso">
+          <div class="card-body text-center">
+            <h5 class="card-title">Espresso</h5>
+            <p class="card-text">Strong and bold coffee shot.</p>
+            <button id="orderBtn" class="btn">Order</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow menu-card">
+          <img src="assets/images/latte.jpeg" class="card-img-top" alt="Latte">
+          <div class="card-body text-center">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text">Smooth and creamy milk coffee.</p>
+            <button id="orderBtn" class="btn">Order</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow menu-card">
+          <img src="assets/images/cappuccino.jpeg" class="card-img-top" alt="Cappuccino">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">Perfect balance of milk and coffee.</p>
+            <button id="orderBtn" class="btn">Order</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <small class="text-danger d-none" id="nameError">Name is required</small>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <small class="text-danger d-none" id="emailError">Valid email is required</small>
+          </div>
+          
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+            <small class="text-danger d-none" id="messageError">Message cannot be empty</small>
+          </div>
+          
+          <button type="submit" class="btn btn-dark">Send</button>
+        </form>
+        
+        <div id="successMessage" class="alert alert-success mt-3 d-none">
+          ✅ Thanks for contacting us! We'll get back to you soon.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/lib/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
