@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+  height: 100vh; 
+  background: url('../images/coffee-bg.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); 
+}
+
+.hero-section div {
+  position: relative;
+  z-index: 1; 
+}
+
+.hero-content {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.5s; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#orderBtn{
+    background-color: #e64c3c;
+    color: white;
+    font-weight: 700;
+}
+.menu-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+#contact {
+  background-color: #212529; 
+}
+
+#contact h2,
+#contact label,
+#contact small {
+  color: white; 
+}
+
+#contact .form-control {
+  border: none;
+  border-radius: 8px;
+}
+
+
