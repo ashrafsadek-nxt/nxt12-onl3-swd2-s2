@@ -1,0 +1,29 @@
+/* CSS Variables */
+:root {
+    --primary-color: #4285f4;
+    --primary-hover: #3367d6;
+    --secondary-color: #34a853;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #202124;
+    --text-secondary: #5f6368;
+    --border-color: #dadce0;
+    --border-radius: 8px;
+    --shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    --shadow-hover: 0 2px 8px rgba(32, 33, 36, 0.4);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
