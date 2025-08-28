@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="./assets/css/assignment3.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1 class="hero-title">Welcome to My Blog</h1>
+    <button id="hero-btn">Click Me!</button>
+  </section>
+
+  <section class="blog" id="blog">
+    <h2>Latest Articles</h2>
+    <div class="blog-container">
+      <div class="blog-post">
+        <h3>How to Build Responsive Websites</h3>
+        <p>Learn the basics of responsive design and CSS grids.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-post">
+        <h3>Top 5 JavaScript Tricks</h3>
+        <p>Boost your coding productivity with these tips.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-post">
+        <h3>Introduction to Data Analytics</h3>
+        <p>Why data is the new gold in today’s world.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="./assets/js/assignment3.js"></script>
+</body>
+</html>
