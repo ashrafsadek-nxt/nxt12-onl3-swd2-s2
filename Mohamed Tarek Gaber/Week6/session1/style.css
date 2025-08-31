@@ -1,0 +1,30 @@
+
+    .light {
+    background-color: white;
+    color: rgb(44, 40, 40);
+    }
+
+
+    .dark {
+    background-color: black;
+    color: white;
+    }
+
+    button {
+    padding: 8px 14px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    }
+
+    #pricebtn {
+    background: #007bff;
+    color: #fff;
+    }
+
+    #toggleBtn {
+    background: #555;
+    color: #fff;
+    }
