@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Card Game</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="game-title">Memory Card Game</h1>
+
+            <section class="card-info">
+                <div class="score">
+                    <h3>Score: <span>0</span></h3>
+                </div>
+
+                <div class="timer">
+                    <h3>Time: <span>00:00</span></h3>
+                </div>
+
+                <div class="moves">
+                    <h3>Moves: <span>0</span></h3>
+                </div>
+            </section>
+
+            <section class="card-play">
+                <div class="game-board">
+                    
+                </div>
+            </section>
+
+            <section class="card-btn">
+                <button class="btn restart-btn">🔄 Start New Game</button>
+                <button class="btn reset-btn">🔄 Reset</button>
+            </section>
+        </div>
+
+        <!--Success Window-->
+        <div class="success-modal" id="successModal">
+            <div class="success-content">
+                <h2>🎉 Congratulation 🎉</h2>
+                <p>You Have Won!</p>
+                <p id="finalStats"></p>
+                <button class="close-modal" onclick="closeSuccessModal()">
+                    Play Again! </button>
+            </div>
+        </div>
+
+        <script src="assets/js/script.js">
+        
+    </script>
+    </body>
+</html>
