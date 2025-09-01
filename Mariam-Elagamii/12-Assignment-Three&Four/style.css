@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Landing */
+.landing {
+  min-height: 100vh;
+  background: linear-gradient(to right, #f9eeee, #fff);
+  padding: 4rem 0;
+  transition: all 0.5s ease;
+}
+
+.landing h1 span {
+  color: #b9375d;
+}
+
+.landing img {
+  max-width: 350px;
+  transition: transform 0.5s ease;
+}
+
+.landing img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* Works Section */
+.works-section h2 {
+  color: #b9375d;
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Contact */
+.contact-section h2 {
+  color: #b9375d;
+}
+
+#contactForm input,
+#contactForm textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contactForm button {
+  background-color: #b9375d;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+  background-color: #d25d5d;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+}
+
+.links i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.links i:hover {
+  color: #d25d5d;
+}
