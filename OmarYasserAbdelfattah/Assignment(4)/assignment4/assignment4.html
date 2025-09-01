@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/assignment4.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white" id="home">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Welcome to My Blog</h1>
+      <button id="hero-btn" class="btn btn-info btn-lg fw-bold">Click Me!</button>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-5" id="blog">
+    <div class="container text-center">
+      <h2 class="mb-4 fw-bold text-dark">Latest Articles</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">How to Build Responsive Websites</h5>
+              <p class="card-text">Learn the basics of responsive design and CSS grids.</p>
+              <a href="#" class="btn btn-info read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Top 5 JavaScript Tricks</h5>
+              <p class="card-text">Boost your coding productivity with these tips.</p>
+              <a href="#" class="btn btn-info read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Data Analytics</h5>
+              <p class="card-text">Why data is the new gold in today’s world.</p>
+              <a href="#" class="btn btn-info read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5 contact" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contactForm" class="shadow p-4 rounded bg-white">
+            <div class="mb-3">
+              <input type="text" id="name" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" id="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <textarea id="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/assignment4.js"></script>
+</body>
+</html>

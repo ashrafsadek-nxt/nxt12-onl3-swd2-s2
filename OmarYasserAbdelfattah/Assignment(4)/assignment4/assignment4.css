@@ -1,0 +1,37 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  min-height: 70vh;
+}
+
+.hero h1 {
+  animation: fadeInDown 2s ease-in-out;
+}
+
+.read-more {
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
