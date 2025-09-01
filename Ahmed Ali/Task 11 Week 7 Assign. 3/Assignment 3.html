@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Assets/css/Assignment 3.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <h2 class="text-2xl font-bold text-indigo-600">Test</h2>
+                </div>
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 relative">Home</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-indigo-600 relative">Portfolio</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 relative">Contact</a>
+                </div>
+
+                <!-- Mobile menu button => hamburger button << hidden. --> 
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-indigo-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav => like 'dropdown' << hidden. -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Portfolio</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="home" class="min-h-screen bg-gradient-to-r from-blue-600 to-purple-700 flex items-center pt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Creative Developer
+            </h1>
+            <p class="text-xl mb-8">
+                Building modern web experiences with passion
+            </p>
+            <div class="space-x-4">
+                <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
+                    View My Work
+                </button>
+                <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-md mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+            
+            <form id="contact-form" class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Name</label>
+                    <input type="text" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-indigo-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Message</label>
+                    <textarea rows="4" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded font-semibold hover:bg-indigo-700">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../Project/Assets/js/Assignment 3.js"></script>
+</body>
+</html>
+
