@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Translator</title>
+</head>
+
+<body>
+    
+    <div class="repeat">
+        <h1 class="typing">Pay Per Word, Translate with Ease</h1>
+    </div>
+    
+    <video class="bgVideo" autoplay muted loop>
+        <source src="assets/videos/bg.mp4"  type="video/mp4">
+    </video>
+
+    <div class="hero">
+
+        <div class="container">
+
+            <div class="translator">
+
+                <div class="lang1">
+                    <label for="firstLanguage">First Language</label>
+                    <select name="" id="firstLanguage">
+                        <option value="ar">Arabic</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+
+                <div class="lang2">
+                    <label for="secondLanguage">Second Language</label>
+                    <select name="" id="secondLanguage">
+                        <option value="ar">Arabic</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="countAndDiscount">
+
+                <div class="count">
+                    <label for="total">Number of letters</label>
+                    <input type="number" id="total" placeholder="Enter total of your letters">
+                </div>
+
+                <div class="coupon">
+                    <label for="">coupon</label>
+                    <input type="text" placeholder="Enter your coupon" id="coupon">
+                </div>
+
+            </div>
+
+            <div class="btn">
+                <button id="btnPrice">Calculate Price</button>
+            </div>
+
+            <div class="show">
+
+                <div class="price">
+                    <label for="">Price:</label>
+                    <span id="showPrice"></span>
+                </div>
+                <br>
+                <div id="discount">
+                    <label for="">Discount:</label>
+                    <span id="showDiscount"></span>
+                </div>
+
+            </div>
+          
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

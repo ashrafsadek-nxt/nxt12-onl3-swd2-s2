@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0; 
+    color: white;
+    /* background: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    height: 100vh; 
+    /* display: flex; */
+    /* justify-content: center; 
+    align-items: center;    */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    
+}
+.typing {
+    display: inline-block; /* مهم جدا عشان التأثير يطبق على النص بس */
+    width: 34ch; /* عدد الأحرف في النص */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    font-family: monospace;
+    font-size: 2rem;
+    animation: typing 8s steps(22) infinite alternate, blink 0.7s step-end infinite;
+    margin-left: 33rem;
+    margin-top: 5rem;
+    text-shadow: 1px 1px 10px whitesmoke;
+}
+
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 34ch; }
+    100% { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.bgVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يخلي الفيديو يغطي الشاشة من غير تمدد غريب */
+    z-index: -1; /* يخليه ورا المحتوى */
+    filter: brightness(35%) contrast(100%); /* يخلي الفيديو أغمق */
+
+}
+
+.hero {
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 40%;
+    padding: 50px;
+    box-shadow: 5px 1px 50px whitesmoke;
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-left: 27rem;
+}
+.hero:hover{
+    box-shadow: 5px 5px 50px wheat;
+}
+.translator{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.countAndDiscount{
+    display: flex;
+    justify-content: space-around;
+    gap: 7px;
+    margin-top: 85px;
+    font-size: 22px;
+}
+.btn{
+    margin: 60px;
+    text-align: center;
+}
+#btnPrice{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+#btnPrice:hover{
+    cursor: pointer;
+    background-color: rgb(178, 173, 173);
+    box-shadow: 1px 1px 5px white;
+}
+.show{
+    margin-top: 50px;
+}
+#discount{
+    display: none;
+}
+select{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+input{
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
