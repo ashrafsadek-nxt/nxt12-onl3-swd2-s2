@@ -1,0 +1,130 @@
+    body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    #header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      background-color: #333;
+      color: white;
+      padding:20px;
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: 80px;
+    }
+
+  img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+  animation:roll 3s ease-out 0s 1 forwards;
+
+}
+@keyframes roll {
+  0% {transform: translateX(0);}
+
+  0.1% {transform: translateX(-330px) rotate(0deg);}
+  70%{transform: translateX(70px) rotate(370deg);} 
+  80%{transform: translateX(50px) rotate(350deg);} 
+  100%{transform: translateX(70px) rotate(360deg);}/* رجوع للمكان الأصلي */
+}
+
+    img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    #header-text{
+      color: black;      
+      text-align: center;
+      animation: fadeInDown 3s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #nav{
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      background-color:#f4f4f4;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li{
+      display: inline-block;
+      margin:0px 15px;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: rgb(0, 136, 255);
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 20px;
+      border-bottom: 2px solid #ddd;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    section:hover {
+      background-color: #f0f0f0;
+    } 
+
+    footer{
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media screen and (width <= 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      img {
+        animation: none;
+        margin-right: 15px;
+        width: 100px;
+        height: 100px;
+      }
+      li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+
+    @media screen and (width <= 480px) {
+      h1 {
+        font-size: 22px;
+      }
+      a {
+        font-size: 14px;
+      }
+      section {
+        padding: 15px;
+      }
+    }
