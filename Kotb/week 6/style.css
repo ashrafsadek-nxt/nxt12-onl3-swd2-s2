@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    color: rgb(1, 1, 12);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+:root {
+    --bg-color: aliceblue;
+    --text-color: rgb(2, 2, 31);
+}
+
+.container {
+    margin-top: 10vh;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.title {
+    padding: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.price-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.word-section {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.coupon-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.discount-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
