@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "module": "es6",       
+    "target": "es6",        
+    "lib": ["dom", "es6"],  
+    // Other Outputs
+    "sourceMap": true,
+
+    // Stricter Typechecking Options
+    "strict": true,
+
+    
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}
