@@ -1,0 +1,23 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+.products{
+    width:22%;
+    border:2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn2{
+    margin-left: 18rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.img{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+}
