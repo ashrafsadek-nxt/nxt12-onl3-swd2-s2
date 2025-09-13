@@ -1,0 +1,67 @@
+body{
+  background-color: #11171D;
+  font-family:"Montserrat", "Segoe UI", "Roboto", "Helvetica", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#btn{
+  margin-left: 650px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: #D32F2F;
+  border-radius: 10px;
+  border-style: none;
+  color: #FFFFFF;
+  font-size: xx-large;
+  transition: all .3s linear;
+}
+#btn:hover{
+    transform:translateY(-2px);
+    background-color: #000000;
+    box-shadow: 0 0 15px #D32F2F;
+    transform: scale(1.05);
+}
+#sec{
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.div{
+  width: 20%;
+  height: 70vh;
+  color: #FFFFFF;
+  padding: 10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  gap:15px;
+}
+
+.div h2{
+  color: #FFFFFF;
+}
+.pric{
+color: #d8690e;
+}
+.des{
+color: #FFFFFF73;
+}
+.div button{
+  width: 35%;
+  padding: 5px;
+  background-color: #D32F2F;
+  border-radius: 10px;
+  border-style: none;
+  color: #FFFFFF;
+  font-size: large;
+  transition: all .3s linear;
+}
+.div button:hover{
+    transform:translateY(-2px);
+    background-color: #000000;
+    box-shadow: 0 0 15px #D32F2F;
+    transform: scale(1.05);
+}
