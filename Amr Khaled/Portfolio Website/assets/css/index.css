@@ -1,0 +1,523 @@
+:root{
+    --dark-navy : #0a192f;
+    --navy : #112240;
+    --light-navy-border : #1e2936;
+    --slate : #8892b0;
+    --light-slate : #cbd5e1;
+    --lightest-slate: #ccd6f6;
+    --highlight : #64ffda;
+    /* --- Light Mode Color Palette --- */
+    --background: #f8f9fa;
+    --card-background: #ffffff;
+    --border: #e2e8f0;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --light-highlight: #64ffda;
+    --font-sans: 'Inter', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--dark-navy);
+    font-family: var(--font-sans);
+    color: var(--light-slate);
+}
+.carda{
+    background-color: var(--navy);
+    border: 1px solid var(--light-navy-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+.carda p{
+    color: var(--slate);
+}
+.carda:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.slidea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1000px;
+    padding: 10% 3%;
+    border-bottom: 1px solid var(--lightest-slate);
+    margin: 0% auto;
+    flex-direction: column;
+}
+.slidea:last-child{
+    border-bottom: none;
+}
+#covera{
+    flex-direction: row;
+}
+#covera{
+    gap: 160px;
+    
+}
+.cover-imga{
+    display: flex;
+}
+
+.cover-imga img{
+    width: 350px;       
+    height: 350px;      
+    object-fit: cover;  
+    border-radius: 50%; 
+    border: 3px solid var(--highlight);
+}
+#left-covera{
+    text-align: center;
+    line-height: 80px;
+}
+#left-covera .hia{
+    color: var(--highlight);
+    font-size: 20px;
+}
+#left-covera h1{
+    font-size: 70px;
+    color: var(--lightest-slate);
+}
+#left-covera h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--slate);
+}
+#left-covera .bio{
+    font-size: 15px;
+    line-height: 20px;
+}
+#left-covera a{
+    display: inline-block;
+    margin-top: 0px;
+    background-color: transparent;
+    color: var(--highlight);
+    padding: 0% 40px;
+    border: 1px solid var(--highlight);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    height: auto;
+}
+#left-covera a:hover{
+    background-color: rgba(100, 255, 218, 0.2);
+}
+.highlighta{
+    color: var(--highlight);
+    font-weight: 700;
+}
+.titlea{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--lightest-slate);
+    display: flex;
+    align-items: center;
+}
+.titlea h2{
+    color: var(--lightest-slate);
+    font-size: 35px;
+}
+.about-grida{
+    display: grid;
+    gap : 70px;
+    align-items: center;
+    width: 100%;
+}
+.about-contenta{
+    display: flex;
+    flex-direction: column;
+}
+.about-texta{
+    color: var(--slate);
+}
+.about-texta strong{
+    color: var(--lightest-slate);
+}
+.about-imga img{
+    width: 250px;
+}
+#edua{
+    flex-direction: column;
+}
+.skills-grida{
+    display: grid;
+    gap: 70px;
+}
+.edu-carda h3,.school1a{
+    color: var(--lightest-slate);
+}
+.edu-carda h3{
+    color: var(--lightest-slate);
+}
+.edu-carda li,.school2a{
+    color: var(--slate);
+}
+.skl-carda h3{
+    color: var(--lightest-slate);
+}
+.ski-tagsa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.taga{
+    background-color: var(--light-navy-border);
+    color: var(--highlight);
+    font-family: monospace;
+}
+#xpa .titlea{
+    margin-bottom: 0px;
+}
+.timelinea{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 32px;
+}
+.timeline-itema{
+    position: relative;
+    padding-left: 48px;
+}
+.timeline-itema .slate{
+    color: var(--slate);
+}
+.timeline-icona{
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--dark-navy);
+    border-radius: 30px;
+    background-color: var(--light-navy-border);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.timeline-icona svg{
+    width: 16px;
+    height: 16px;
+    color: var(--highlight);
+}
+.timeline-linea {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+    width: 2px;
+    background-color: #334155;
+}
+.companya{
+    color: var(--highlight) !important;
+    font-weight: 700;
+}
+.timeline-itema h3{
+    color: var(--lightest-slate);
+}
+.timeline-itema .datea {
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--slate);
+}
+.ser-grida{
+    display: grid;
+    gap: 30px;
+}
+.carda h3{
+    color: var(--lightest-slate);
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.project-grida{
+    display: grid;
+    gap: 40px;
+}
+.pro-imga img{
+    width: 100%;
+}
+.projecta h3{
+    color: var(--highlight);
+    font-weight: 900;
+    text-align: center; 
+}
+.projecta .card-txta{
+    color: var(--slate);
+    /*margin-top: 25px;*/
+}
+#contacta{
+    text-align: center;
+}
+#contacta .titlea{
+    justify-content: center;
+}
+.cta-buttona{
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid var(--highlight);
+    color: var(--highlight);
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.cta-buttona:hover{
+    background-color: rgba(100, 255, 218, 0.2);
+}
+.social-linksa{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 64px;
+}
+.social-linksa a {
+    color: var(--slate);
+}
+.social-linksa a:hover{
+    color: var(--highlight);
+}
+.social-linksa a svg{
+    width: 32px;
+}
+#contacta p{
+    color: var(--slate);
+    margin-top: 30px;
+}
+nav{
+    /* position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; */
+    background-color: rgba(10, 25, 47, 0.8);
+    backdrop-filter: blur(4px);    
+    z-index: 10;
+} 
+/* .nav-containera{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    max-width: 100%;
+    align-items: center;
+    height: 64px;
+} */
+.nav-linksa{
+    display: flex;
+    gap : 20px;
+}
+.nav-linksa a{
+    text-decoration: none;
+    color: var(--lightest-slate);
+    transition:color 0.3s ease;
+}
+.nav-linksa a:hover{
+    color: var(--highlight);
+}
+.logoa{
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #64ffda;
+}
+.navbar-toggler{
+    background-color: var(--highlight);
+}
+@media (min-width :768px){
+    .about-grida{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+    .about-contenta{
+        grid-column: span 2;
+    }
+    .skills-grida{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .ser-grida{
+        grid-template-columns: repeat(2,minmax(0,1fr)) ;   
+    }
+    .project-grida{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    
+}
+@media (max-width :767px){
+    .cover-imga{
+        margin-top: 6vh;
+    }
+}
+@media (min-width :1024px){
+    .ser-grida{
+        grid-template-columns: repeat(4,minmax(0,1fr)) ;   
+    }
+}
+/* --- Dynamic Theme Toggle Switch Styles --- */
+
+/* Container for the switch */
+#theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Width of the switch track */
+  height: 34px; /* Height of the switch track */
+}
+
+/* Hide the default checkbox */
+#theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider track */
+.form-check-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2c3e50; /* Dark mode track color */
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* The slider handle (the moving circle) */
+.form-check-label:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Height of the circle */
+  width: 26px; /* Width of the circle */
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  z-index: 2; /* Ensure it's above icons */
+}
+
+/* --- The Magic: How it moves --- */
+input:checked + .form-check-label {
+  background-color: #3498db; /* Light mode track color */
+}
+
+input:checked + .form-check-label:before {
+  transform: translateX(26px); /* Move the circle to the right */
+}
+
+/* --- Icon Styles --- */
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 16px;
+  transition: opacity .4s ease;
+}
+
+.sun-icon {
+  left: 8px;
+  opacity: 0; /* Hidden by default */
+}
+
+.moon-icon {
+  right: 8px;
+  opacity: 1; /* Visible by default (in dark mode) */
+}
+
+/* Show/Hide icons based on checkbox state */
+input:checked + .form-check-label .sun-icon {
+  opacity: 1; /* Show sun in light mode */
+}
+
+input:checked + .form-check-label .moon-icon {
+  opacity: 0; /* Hide moon in light mode */
+}
+/* --- Light Mode Color CSS --- */
+body.light-mode{
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+body.light-mode .highlighta,
+body.light-mode .logoa,
+body.light-mode #left-covera .hia,
+body.light-mode .companya,
+body.light-mode .cta-buttona,
+body.light-mode #left-covera .ba {
+    color: var(--light-highlight); 
+}
+body.light-mode .carda{
+    background-color: var(--card-background);
+    border:1px solid var(--border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body.light-mode .carda:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+body.light-mode .titlea h2,
+body.light-mode #left-covera h1,
+body.light-mode .edu-carda h3,
+body.light-mode .school1a,
+body.light-mode .skl-carda h3,
+body.light-mode .timeline-itema h3 {
+    color: var(--text-primary); 
+}
+body.light-mode #left-covera h2,
+body.light-mode .about-texta,
+body.light-mode .about-texta p,
+body.light-mode .timeline-itema .slate,
+body.light-mode .edu-carda li,
+body.light-mode .school2a,
+body.light-mode .carda p,
+body.light-mode .projecta .card-txta,
+body.light-mode #contacta p,
+body.light-mode .social-linksa a,
+body.light-mode .nav-linksa a {
+    color: var(--text-secondary);
+}
+body.light-mode .taga {
+    background-color: var(--border);
+    color: var(--light-text);
+}
+
+body.light-mode .timeline-linea {
+    background-color: var(--dark-navy); 
+}
+
+body.light-mode .timeline-icona {
+    border: 4px solid var(--light-background); 
+    background-color: var(--border);
+}
+
+body.light-mode .timeline-icona svg {
+    color: var(--light-highlight);
+}
+
+body.light-mode nav {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-bottom: 1px solid var(--border);
+}
+
+body.light-mode .nav-linksa a:hover,
+body.light-mode .social-linksa a:hover {
+    color: var(--light-highlight);
+}
+
+body.light-mode .slidea {
+    border-bottom: 1px solid var(--border);
+}
+
+
+body.light-mode #theme-toggle .form-check-label {
+    background-color: #3498db; 
+}
+
+body.light-mode #theme-toggle .form-check-label:before {
+    background-color: white; 
+}
