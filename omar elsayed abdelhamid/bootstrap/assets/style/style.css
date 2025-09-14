@@ -1,0 +1,12 @@
+    body {
+        background-color: #f9f9f9;
+    }
+
+    .btn-primary {
+        background-color: #ff5722;
+        border-color: #e64a19;
+    }
+
+    .custom-section {
+        padding: 40px 0;
+    }
