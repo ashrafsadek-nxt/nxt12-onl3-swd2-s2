@@ -1,0 +1,208 @@
+/*================= الألوان =================*/
+:root {
+  --light-bg: #CAF0F8;
+  --light-card: #90E0EF;
+  --light-accent: #00B4D8;
+  --light-accent-dark: #0077B6;
+  --light-div:#f9fafc;
+
+  --dark-bg: #03045E;
+  --dark-card: #1f1f2f;
+  --text-dark: #03045E;
+  --text-light: #f0f8ff;
+  --dark-div:#2b2b3d;
+}
+
+/*================= Reset =================*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+/*================= Header =================*/
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-accent-dark);
+  color: white;
+  padding: 20px;
+  gap: 80px;
+}
+
+#toggle-theme {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  padding: 8px 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--light-accent);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+#toggle-theme:hover { transform: scale(1.1); }
+
+img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid var(--light-card);
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+img:hover { transform: scale(1.1) rotate(3deg); }
+
+#header-text {
+  text-align: center;
+}
+
+/*================= Nav =================*/
+#nav {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--light-card);
+}
+ul { list-style: none; margin: 0; padding: 0; }
+li { display: inline-block; margin: 0 15px; }
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+a:hover { color: var(--light-accent); transform: scale(1.1); }
+
+/*================= Sections =================*/
+section {
+  padding: 20px;
+  margin: 15px;
+  border-radius: 12px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+section:hover { background-color: var(--light-card); }
+
+/*================= Skills =================*/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: var(--light-div);
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.skill-item i {
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.skill-item span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+/*================= Pricing =================*/
+#pricing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pricing-item {
+  flex: 1 1 300px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--light-div);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+.pricing-item:hover {
+  transform: translateY(-5px); }
+
+/*================= Form =================*/
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+#contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--light-accent);
+  color: white;
+  font-size: 16px;
+}
+#contact-form button:hover { background-color: var(--light-accent-dark); }
+
+/*================= GitHub projects =================*/
+#github-projects { margin-top: 15px; display: none; flex-direction: column; gap: 8px; }
+#github-projects a {
+  display: block;
+  padding: 8px 12px;
+  background-color: var(--light-card);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+#github-projects a:hover { background-color: var(--light-div);}
+
+/*================= Footer =================*/
+footer {
+  background-color: var(--light-accent-dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/*================= Dark Mode =================*/
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+.dark-mode #header { background-color: var(--dark-card); }
+.dark-mode #nav { background-color: var(--dark-card); }
+.dark-mode section { background-color: var(--dark-card); }
+.dark-mode a { color: #90E0EF; }
+.dark-mode #github-projects a { background-color: #222; color: var(--text-light); }
+.dark-mode .skill-item { background-color: var(--dark-div);color: var(--text-light); }
+.dark-mode .pricing-item { background-color: var(--dark-div);color: var(--text-light); }
+
+/*================= Responsive =================*/
+@media screen and (max-width: 768px) {
+  #header { flex-direction: column; gap: 20px; }
+  li { display: block; margin: 10px 0; }
+  img { width: 100px; height: 100px; }
+}
+@media screen and (max-width: 480px) {
+  h1 { font-size: 22px; }
+  a { font-size: 14px; }
+  section { padding: 15px; }
+}

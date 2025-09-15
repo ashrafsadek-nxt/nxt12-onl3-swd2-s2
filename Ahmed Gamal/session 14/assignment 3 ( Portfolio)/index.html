@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="assests/Css/css.css">
+</head>
+<body>
+  <header>
+    <div id="header">
+      <button id="toggle-theme">🌙</button>
+      <img src="/all-code/assests/images/ahmed.jpg" alt="Ahmed's image">
+      <div id="header-text">
+        <h1>Ahmed's Portfolio</h1>
+        <p>Welcome to my personal website</p>
+      </div>
+    </div>
+    <div id="nav">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Ahmed Gamal, a computer science student passionate about front end web development.</p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+        <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+        <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+        <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="skill-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+        <div class="skill-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+        <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here you'll find some of my past and ongoing projects. This section will showcase my work.</p>
+      <p>You can view my projects and their source code on GitHub:
+        <a href="https://github.com/AhmedGamal17-9">AhmedGamal17-9</a></p>
+      <div id="github-projects"></div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing & Discounts</h2>
+      <div id="pricing-list"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can contact me at: <strong>ahmed@gmail.com</strong></p>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ahmed. All rights reserved.</p>
+  </footer>
+
+  <script src="assests/js/js.js"></script>
+</body>
+</html>
