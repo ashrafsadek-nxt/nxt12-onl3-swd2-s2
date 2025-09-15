@@ -1,0 +1,12 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+}
+
+.btn-primary {
+  background-color: #ff6600;
+  border: none;
+}
+
+.navbar {
+  background-color: #333 !important;
+}
