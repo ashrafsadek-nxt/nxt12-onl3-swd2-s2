@@ -1,0 +1,292 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-light: white;
+	--bg-medium: #e6e8e8;
+	--bg-dark: rgb(209, 210, 213);
+	--dark-text: black;
+}
+
+body.dark {
+	--bg-light: #2C2C2C;
+	--bg-medium: #1E1E1E;
+	--bg-dark: #121212;
+	--dark-text: #EAEAEA;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg-light);
+	color: var(--dark-text);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5% 0 30px;
+	height: 90px;
+	position: sticky;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	background-color: var(--bg-dark);
+}
+
+.header-left {
+	display: flex;
+	gap: 2em;
+}
+
+#toggle {
+	height: fit-content;
+	padding: 0;
+	background-color: var(--bg-color);
+	border: none;
+	cursor: pointer;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: var(--dark-text);
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+    align-self: center;
+}
+
+.hamburger span {
+	width: 25px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: var(--dark-text);
+}
+
+.div-title {
+	align-self: center;
+	background-color: var(--bg-dark);
+	width: max-content;
+	padding: 8px;
+	font-size: 14px;
+	border-radius: 30px;
+}
+
+.title {
+	font-size: 42px;
+}
+
+.reg-txt {
+	font-size: 18px;
+}
+
+.main-cont {
+	padding: 80px 5%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.inner-cont {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inner-cont div {
+	width: 60%;
+}
+
+#about-me {
+	background-color: var(--bg-light);
+}
+
+#about-me img {
+	width: 280px;
+	height: 280px;
+	background-color: var(--bg-dark);
+}
+
+#projects {
+	background-color: var(--bg-medium);
+}
+
+.prjcts-slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.prjcts-slides {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.prjcts-slider button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	color: var(--dark-text);
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+.prev {
+	left: 10px;
+}
+.next {
+	right: 10px;
+}
+
+.prjcts-slide {
+	display: flex;
+	gap: 30px;
+	min-width: 100%;
+	background-color: var(--bg-light);
+	padding: 3rem;
+	min-height: 400px;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.prjcts-slide img {
+	height: 100%;
+	max-width: 400px;
+}
+
+#skills {
+	background-color: var(--bg-light);
+}
+
+.skill-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	margin-top: 30px;
+}
+
+.skills-flex-item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 80px;
+	text-align: center;
+}
+
+#contact {
+	background-color: var(--bg-medium);
+}
+
+.contact-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.contact-flex-item {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-flex-item img {
+	height: 40px;
+	width: 40px;
+}
+
+.contact-text {
+	color: var(--dark-text);
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: var(--dark-text);
+}
+
+footer {
+	text-align: center;
+	background-color: var(--bg-dark);
+	padding: 5px 0;
+}
+
+@media(max-width:900px) {
+	#about-me .inner-cont {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.inner-cont div {
+		width: 90%
+	}
+
+	.prjcts-slide {
+		flex-direction: column;
+		min-height: 500px;
+	}
+
+}
+
+@media(max-width:720px) {
+	.nav-links {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		flex-direction: column;
+		background: var(--bg-dark);
+		width: 200px;
+		padding: 1rem;
+		gap: 1rem;
+		display: none;
+	}
+	.nav-links.show {
+		display: flex;
+	}
+	.hamburger {
+		display: flex;
+	}
+}
+
+@media(max-width:580px) {
+	.skill-flex {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.contact-text {
+		font-size: 20px;
+	}
+}
