@@ -1,0 +1,26 @@
+#App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;  
+}
+#App_main{
+  display: flex;  
+  flex: 1;
+}
+#App_main_content{
+  padding: 10px 20px ;
+}
+#App_main_content_tag{
+  width: 10%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+
+}
+#App_main_content_cards-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 5%;      
+  padding: 6px 20px;
+  overflow: hidden;
+}

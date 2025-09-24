@@ -1,0 +1,22 @@
+#Sidebar_aside{
+  width: 15%;
+  background-color: #f8f8f8;
+  padding-top: 1%;
+  border-right: 1px solid #ccc;
+}
+#Sidebar_aside ul{  
+  list-style-type: none;
+}
+.Sidebar_aside_link{
+  margin-bottom: 15%;
+}
+.Sidebar_aside_link a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.Sidebar_aside_link a:hover {
+  color: #007bff;
+}
