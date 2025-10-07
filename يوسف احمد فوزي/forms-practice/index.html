@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <h1>Join Our Community</h1>
+        <p class="subtitle">Fill out the form below to create your account</p>
+
+        <form action="#" method="post" class="registration-form">
+          <div class="form-section">
+            <h3>Personal Information</h3>
+            <div class="input-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+
+            <div class="input-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+
+            <div class="input-group">
+              <label for="birthDate">Date of Birth</label>
+              <input type="date" id="birthDate" name="birthDate" required />
+            </div>
+
+            <div class="input-group">
+              <label>Gender</label>
+              <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Contact Details</h3>
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="input-group">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="egypt">Egypt</option>
+                <option value="saudi">Saudi Arabia</option>
+                <option value="uae">UAE</option>
+                <option value="jordan">Jordan</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" list="cities" />
+              <datalist id="cities">
+                <option value="Cairo"></option>
+                <option value="Alexandria"></option>
+                <option value="Giza"></option>
+                <option value="Sharm El Sheikh"></option>
+              </datalist>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Account Setup</h3>
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+
+            <div class="input-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="bio">About You</label>
+              <textarea
+                id="bio"
+                name="bio"
+                rows="4"
+                cols="50"
+                placeholder="Tell us about yourself..."
+              ></textarea>
+            </div>
+
+            <div class="input-group">
+              <label for="avatar">Profile Picture</label>
+              <input type="file" id="avatar" name="avatar" accept="image/*" />
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Preferences</h3>
+            <div class="checkbox-group">
+              <label>Interests</label>
+              <div class="checkbox-items">
+                <input
+                  type="checkbox"
+                  id="tech"
+                  name="interests"
+                  value="technology"
+                />
+                <label for="tech">Technology</label>
+
+                <input
+                  type="checkbox"
+                  id="sports"
+                  name="interests"
+                  value="sports"
+                />
+                <label for="sports">Sports</label>
+
+                <input
+                  type="checkbox"
+                  id="music"
+                  name="interests"
+                  value="music"
+                />
+                <label for="music">Music</label>
+
+                <input
+                  type="checkbox"
+                  id="travel"
+                  name="interests"
+                  value="travel"
+                />
+                <label for="travel">Travel</label>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+              />
+              <label for="newsletter">Subscribe to our newsletter</label>
+            </div>
+
+            <div class="input-group">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree to the <a href="#">Terms and Conditions</a></label
+              >
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button type="reset" class="btn-secondary">Reset Form</button>
+            <button type="submit" class="btn-primary">Create Account</button>
+          </div>
+        </form>
+
+        <div class="form-footer">
+          <p>Already have an account? <a href="#">Sign In</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

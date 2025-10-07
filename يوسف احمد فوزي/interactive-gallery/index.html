@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Gallery - Show & Hide Elements</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1>🎨 Interactive Gallery</h1>
+        <p>Explore different categories and interact with dynamic content</p>
+      </header>
+
+      <nav class="gallery-nav">
+        <button class="nav-btn active" data-category="all">🌟 Show All</button>
+        <button class="nav-btn" data-category="nature">🌿 Nature</button>
+        <button class="nav-btn" data-category="technology">
+          💻 Technology
+        </button>
+        <button class="nav-btn" data-category="art">🎨 Art</button>
+        <button class="nav-btn" data-category="architecture">
+          🏛️ Architecture
+        </button>
+      </nav>
+
+      <div class="control-panel">
+        <div class="control-group">
+          <h3>Gallery Controls</h3>
+          <button id="toggleAll" class="control-btn">
+            👁️ Toggle All Items
+          </button>
+          <button id="showRandom" class="control-btn">
+            🎲 Show Random Item
+          </button>
+          <button id="animateAll" class="control-btn">✨ Animate All</button>
+          <button id="resetGallery" class="control-btn">
+            🔄 Reset Gallery
+          </button>
+        </div>
+
+        <div class="stats-panel">
+          <h3>Gallery Stats</h3>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="stat-label">Total Items:</span>
+              <span id="totalItems" class="stat-value">12</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Visible Items:</span>
+              <span id="visibleItems" class="stat-value">12</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Hidden Items:</span>
+              <span id="hiddenItems" class="stat-value">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="gallery-grid" id="galleryGrid">
+        <!-- Nature Category -->
+        <div class="gallery-item" data-category="nature">
+          <div class="item-image">
+            <div class="placeholder-image nature-bg">🌲</div>
+          </div>
+          <div class="item-content">
+            <h3>Forest Landscape</h3>
+            <p>Beautiful forest with tall trees and morning sunlight</p>
+            <span class="category-tag nature">Nature</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+          <div class="item-image">
+            <div class="placeholder-image nature-bg">🌊</div>
+          </div>
+          <div class="item-content">
+            <h3>Ocean Waves</h3>
+            <p>Crashing waves on a pristine beach at sunset</p>
+            <span class="category-tag nature">Nature</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+          <div class="item-image">
+            <div class="placeholder-image nature-bg">🏔️</div>
+          </div>
+          <div class="item-content">
+            <h3>Mountain Peak</h3>
+            <p>Snow-capped mountain peak reaching into the clouds</p>
+            <span class="category-tag nature">Nature</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <!-- Technology Category -->
+        <div class="gallery-item" data-category="technology">
+          <div class="item-image">
+            <div class="placeholder-image tech-bg">💻</div>
+          </div>
+          <div class="item-content">
+            <h3>Modern Workspace</h3>
+            <p>Clean and organized developer workspace setup</p>
+            <span class="category-tag technology">Technology</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="technology">
+          <div class="item-image">
+            <div class="placeholder-image tech-bg">🤖</div>
+          </div>
+          <div class="item-content">
+            <h3>AI Robot</h3>
+            <p>Futuristic AI robot with advanced capabilities</p>
+            <span class="category-tag technology">Technology</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="technology">
+          <div class="item-image">
+            <div class="placeholder-image tech-bg">📱</div>
+          </div>
+          <div class="item-content">
+            <h3>Smart Devices</h3>
+            <p>Collection of modern smart devices and gadgets</p>
+            <span class="category-tag technology">Technology</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <!-- Art Category -->
+        <div class="gallery-item" data-category="art">
+          <div class="item-image">
+            <div class="placeholder-image art-bg">🎭</div>
+          </div>
+          <div class="item-content">
+            <h3>Abstract Painting</h3>
+            <p>Colorful abstract art with bold brushstrokes</p>
+            <span class="category-tag art">Art</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="art">
+          <div class="item-image">
+            <div class="placeholder-image art-bg">🖼️</div>
+          </div>
+          <div class="item-content">
+            <h3>Portrait Study</h3>
+            <p>Detailed portrait with dramatic lighting</p>
+            <span class="category-tag art">Art</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="art">
+          <div class="item-image">
+            <div class="placeholder-image art-bg">🎨</div>
+          </div>
+          <div class="item-content">
+            <h3>Sculpture</h3>
+            <p>Modern sculpture with geometric forms</p>
+            <span class="category-tag art">Art</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <!-- Architecture Category -->
+        <div class="gallery-item" data-category="architecture">
+          <div class="item-image">
+            <div class="placeholder-image arch-bg">🏛️</div>
+          </div>
+          <div class="item-content">
+            <h3>Classical Building</h3>
+            <p>Historic building with classical architecture</p>
+            <span class="category-tag architecture">Architecture</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <div class="item-image">
+            <div class="placeholder-image arch-bg">🏗️</div>
+          </div>
+          <div class="item-content">
+            <h3>Modern Skyscraper</h3>
+            <p>Contemporary skyscraper with glass facade</p>
+            <span class="category-tag architecture">Architecture</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <div class="item-image">
+            <div class="placeholder-image arch-bg">🌉</div>
+          </div>
+          <div class="item-content">
+            <h3>Bridge Design</h3>
+            <p>Innovative bridge with architectural excellence</p>
+            <span class="category-tag architecture">Architecture</span>
+          </div>
+          <button class="item-toggle" onclick="toggleItem(this)">
+            👁️ Hide
+          </button>
+        </div>
+      </main>
+
+      <div class="interaction-log" id="interactionLog">
+        <h3>📝 Interaction Log</h3>
+        <div class="log-content" id="logContent">
+          <p class="log-entry">
+            Welcome to the Interactive Gallery! Try the controls above.
+          </p>
+        </div>
+        <button id="clearLog" class="clear-log-btn">Clear Log</button>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

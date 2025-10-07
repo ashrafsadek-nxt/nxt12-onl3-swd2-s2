@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youseif Ahmed - Modern Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <p>Loading Portfolio...</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>YA<span class="dot">.</span></h2>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Youseif Ahmed</h1>
+            <div class="hero-title">
+              <span>I'm a </span>
+              <span class="typing-text" id="typingText"></span>
+              <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+              Passionate frontend developer creating amazing digital experiences
+              with modern technologies and creative solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-eye"></i> View My Work
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fas fa-envelope"></i> Get In Touch
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <div class="profile-image">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <div class="floating-elements">
+                <div class="floating-icon" style="--delay: 0s">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1s">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2s">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 3s">
+                  <i class="fab fa-react"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll Down</span>
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-card">
+              <h3>My Story</h3>
+              <p>
+                I'm a passionate frontend developer with a love for creating
+                beautiful, functional, and user-friendly websites. My journey in
+                web development started with curiosity and has grown into a
+                career I'm truly passionate about.
+              </p>
+              <p>
+                I believe in the power of clean code, responsive design, and
+                seamless user experiences. Every project I work on is an
+                opportunity to learn something new and push the boundaries of
+                what's possible on the web.
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-label">Satisfaction Rate</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-wrapper">
+              <div class="about-img-placeholder">
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-content">
+          <div class="skills-category">
+            <h3>Frontend Technologies</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-skill="95">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="90">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 & SASS</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="80">
+                <div class="skill-info">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Tools & Others</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-skill="88">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="75">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="70">
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="--width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <div class="project-overlay">
+                <button
+                  class="project-btn"
+                  onclick="openProjectModal('E-commerce Platform')"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="project-btn">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-commerce Platform</h3>
+              <p>
+                Modern e-commerce website with React.js and payment integration
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ui">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="project-overlay">
+                <button
+                  class="project-btn"
+                  onclick="openProjectModal('Banking App UI')"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="project-btn">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Banking App UI</h3>
+              <p>Clean and modern UI design for mobile banking application</p>
+              <div class="project-tech">
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="project-overlay">
+                <button
+                  class="project-btn"
+                  onclick="openProjectModal('Analytics Dashboard')"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="project-btn">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Analytics Dashboard</h3>
+              <p>Interactive dashboard with real-time data visualization</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Chart.js</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="project-overlay">
+                <button
+                  class="project-btn"
+                  onclick="openProjectModal('Food Delivery App')"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="project-btn">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Food Delivery App</h3>
+              <p>React Native app for food ordering and delivery tracking</p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Redux</span>
+                <span>Maps API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-subtitle">My journey so far</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+              <h3>Frontend Developer</h3>
+              <h4>Tech Solutions Inc.</h4>
+              <p>
+                Developing responsive web applications using React.js and modern
+                frontend technologies. Collaborating with design teams to create
+                exceptional user experiences.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-content">
+              <h3>Junior Web Developer</h3>
+              <h4>Digital Agency Pro</h4>
+              <p>
+                Built and maintained client websites, learned advanced
+                JavaScript concepts, and gained experience with various CMS
+                platforms.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - 2023</div>
+            <div class="timeline-content">
+              <h3>Web Development Bootcamp</h3>
+              <h4>Code Academy</h4>
+              <p>
+                Intensive 6-month program covering full-stack web development,
+                including HTML, CSS, JavaScript, React, Node.js, and database
+                management.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2022</div>
+            <div class="timeline-content">
+              <h3>Computer Science Degree</h3>
+              <h4>Cairo University</h4>
+              <p>
+                Studied computer science fundamentals, algorithms, data
+                structures, and software engineering principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>youseif.ahmed@email.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+20 123 456 7890</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Cairo, Egypt</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Youseif Ahmed. All rights reserved.</p>
+          <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modalTitle">Project Title</h3>
+          <button class="modal-close" onclick="closeProjectModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <div class="modal-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+          </div>
+          <div class="modal-details">
+            <p id="modalDescription">Project description will go here...</p>
+            <div class="modal-tech" id="modalTech">
+              <!-- Technologies will be added here -->
+            </div>
+            <div class="modal-buttons">
+              <button class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+              <button class="btn btn-outline">
+                <i class="fab fa-github"></i> Source Code
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

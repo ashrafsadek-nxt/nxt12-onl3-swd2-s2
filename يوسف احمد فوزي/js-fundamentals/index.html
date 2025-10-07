@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals - Interactive Learning</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1>JavaScript Fundamentals</h1>
+        <p>
+          Learn JavaScript basics through interactive examples and exercises
+        </p>
+      </header>
+
+      <nav class="topic-nav">
+        <button class="nav-btn active" data-topic="introduction">
+          Introduction
+        </button>
+        <button class="nav-btn" data-topic="variables">Variables</button>
+        <button class="nav-btn" data-topic="datatypes">Data Types</button>
+        <button class="nav-btn" data-topic="operators">Operators</button>
+        <button class="nav-btn" data-topic="conditions">Conditions</button>
+        <button class="nav-btn" data-topic="loops">Loops</button>
+        <button class="nav-btn" data-topic="functions">Functions</button>
+        <button class="nav-btn" data-topic="arrays">Arrays</button>
+        <button class="nav-btn" data-topic="objects">Objects</button>
+      </nav>
+
+      <main class="content-area">
+        <!-- Introduction Section -->
+        <section class="topic-section active" id="introduction">
+          <h2>Welcome to JavaScript</h2>
+          <div class="content-card">
+            <h3>What is JavaScript?</h3>
+            <p>
+              JavaScript is a versatile programming language that powers the
+              modern web. It can:
+            </p>
+            <ul>
+              <li>Make websites interactive</li>
+              <li>Handle user events (clicks, form submissions, etc.)</li>
+              <li>Manipulate HTML and CSS dynamically</li>
+              <li>Communicate with servers</li>
+              <li>Build complete web applications</li>
+            </ul>
+          </div>
+
+          <div class="content-card">
+            <h3>JavaScript History Timeline</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="year">1995</div>
+                <div class="event">
+                  JavaScript was created by Brendan Eich at Netscape
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="year">1997</div>
+                <div class="event">ECMAScript standard was established</div>
+              </div>
+              <div class="timeline-item">
+                <div class="year">2009</div>
+                <div class="event">
+                  Node.js was released, bringing JS to servers
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="year">2015</div>
+                <div class="event">
+                  ES6/ES2015 introduced major language improvements
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="year">2025</div>
+                <div class="event">
+                  JavaScript continues to evolve with annual updates
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Try Your First JavaScript!</h3>
+            <button onclick="showWelcomeMessage()" class="demo-btn">
+              Click me!
+            </button>
+            <div id="welcome-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Variables Section -->
+        <section class="topic-section" id="variables">
+          <h2>Variables - Storing Data</h2>
+          <div class="content-card">
+            <h3>What are Variables?</h3>
+            <p>
+              Variables are containers that store data values. Think of them as
+              labeled boxes where you can put different types of information.
+            </p>
+
+            <div class="code-example">
+              <h4>Variable Declaration Methods:</h4>
+              <pre><code>// Modern way (recommended)
+let userName = "Youseif";
+const PI = 3.14159;
+
+// Older way (avoid in modern code)
+var oldVariable = "legacy";</code></pre>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Variable Playground</h3>
+            <div class="input-group">
+              <label for="varName">Variable Name:</label>
+              <input type="text" id="varName" placeholder="myVariable" />
+            </div>
+            <div class="input-group">
+              <label for="varValue">Variable Value:</label>
+              <input type="text" id="varValue" placeholder="Hello World" />
+            </div>
+            <button onclick="createVariable()" class="demo-btn">
+              Create Variable
+            </button>
+            <div id="variable-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Data Types Section -->
+        <section class="topic-section" id="datatypes">
+          <h2>Data Types - Types of Information</h2>
+          <div class="content-card">
+            <h3>JavaScript Data Types</h3>
+            <div class="datatype-grid">
+              <div class="datatype-card">
+                <h4>String</h4>
+                <p>Text data</p>
+                <code>"Hello World"</code>
+              </div>
+              <div class="datatype-card">
+                <h4>Number</h4>
+                <p>Numeric data</p>
+                <code>42, 3.14</code>
+              </div>
+              <div class="datatype-card">
+                <h4>Boolean</h4>
+                <p>True or False</p>
+                <code>true, false</code>
+              </div>
+              <div class="datatype-card">
+                <h4>Array</h4>
+                <p>List of items</p>
+                <code>[1, 2, 3]</code>
+              </div>
+              <div class="datatype-card">
+                <h4>Object</h4>
+                <p>Complex data</p>
+                <code>{name: "John"}</code>
+              </div>
+              <div class="datatype-card">
+                <h4>Undefined</h4>
+                <p>No value assigned</p>
+                <code>undefined</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Data Type Detector</h3>
+            <input type="text" id="typeInput" placeholder="Enter any value" />
+            <button onclick="detectType()" class="demo-btn">Detect Type</button>
+            <div id="type-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Operators Section -->
+        <section class="topic-section" id="operators">
+          <h2>Operators - Performing Operations</h2>
+          <div class="content-card">
+            <h3>Types of Operators</h3>
+            <div class="operator-categories">
+              <div class="operator-category">
+                <h4>Arithmetic Operators</h4>
+                <ul>
+                  <li><code>+</code> Addition</li>
+                  <li><code>-</code> Subtraction</li>
+                  <li><code>*</code> Multiplication</li>
+                  <li><code>/</code> Division</li>
+                  <li><code>%</code> Modulus (remainder)</li>
+                </ul>
+              </div>
+              <div class="operator-category">
+                <h4>Comparison Operators</h4>
+                <ul>
+                  <li><code>==</code> Equal to</li>
+                  <li><code>===</code> Strictly equal</li>
+                  <li><code>!=</code> Not equal</li>
+                  <li><code>&gt;</code> Greater than</li>
+                  <li><code>&lt;</code> Less than</li>
+                </ul>
+              </div>
+              <div class="operator-category">
+                <h4>Logical Operators</h4>
+                <ul>
+                  <li><code>&&</code> AND</li>
+                  <li><code>||</code> OR</li>
+                  <li><code>!</code> NOT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Calculator</h3>
+            <div class="calculator">
+              <input type="number" id="num1" placeholder="First number" />
+              <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">×</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+              </select>
+              <input type="number" id="num2" placeholder="Second number" />
+              <button onclick="calculate()" class="demo-btn">=</button>
+            </div>
+            <div id="calc-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Conditions Section -->
+        <section class="topic-section" id="conditions">
+          <h2>Conditions - Making Decisions</h2>
+          <div class="content-card">
+            <h3>Conditional Statements</h3>
+            <p>
+              Conditions allow your code to make decisions based on different
+              scenarios.
+            </p>
+
+            <div class="code-example">
+              <pre><code>if (age >= 18) {
+    console.log("You can vote!");
+} else if (age >= 16) {
+    console.log("You can drive!");
+} else {
+    console.log("You're still young!");
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Age Checker</h3>
+            <input type="number" id="ageInput" placeholder="Enter your age" />
+            <button onclick="checkAge()" class="demo-btn">Check Age</button>
+            <div id="age-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Loops Section -->
+        <section class="topic-section" id="loops">
+          <h2>Loops - Repeating Actions</h2>
+          <div class="content-card">
+            <h3>Types of Loops</h3>
+            <div class="loop-types">
+              <div class="loop-type">
+                <h4>For Loop</h4>
+                <pre><code>for (let i = 0; i < 5; i++) {
+    console.log(i);
+}</code></pre>
+              </div>
+              <div class="loop-type">
+                <h4>While Loop</h4>
+                <pre><code>let count = 0;
+while (count < 5) {
+    console.log(count);
+    count++;
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Pattern Generator</h3>
+            <input
+              type="number"
+              id="patternSize"
+              placeholder="Pattern size"
+              min="1"
+              max="10"
+            />
+            <select id="patternType">
+              <option value="stars">Stars (★)</option>
+              <option value="numbers">Numbers</option>
+              <option value="letters">Letters</option>
+            </select>
+            <button onclick="generatePattern()" class="demo-btn">
+              Generate
+            </button>
+            <div id="pattern-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Functions Section -->
+        <section class="topic-section" id="functions">
+          <h2>Functions - Reusable Code Blocks</h2>
+          <div class="content-card">
+            <h3>What are Functions?</h3>
+            <p>
+              Functions are reusable blocks of code that perform specific tasks.
+            </p>
+
+            <div class="code-example">
+              <h4>Function Declaration:</h4>
+              <pre><code>function greetUser(name) {
+    return "Hello, " + name + "!";
+}
+
+// Arrow function (modern syntax)
+const greetUser = (name) => {
+    return `Hello, ${name}!`;
+};</code></pre>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Custom Greeting Function</h3>
+            <input type="text" id="nameInput" placeholder="Enter your name" />
+            <select id="greetingType">
+              <option value="hello">Hello</option>
+              <option value="welcome">Welcome</option>
+              <option value="hi">Hi</option>
+              <option value="greetings">Greetings</option>
+            </select>
+            <button onclick="createGreeting()" class="demo-btn">
+              Greet Me
+            </button>
+            <div id="greeting-output" class="output-area"></div>
+          </div>
+        </section>
+
+        <!-- Arrays Section -->
+        <section class="topic-section" id="arrays">
+          <h2>Arrays - Lists of Data</h2>
+          <div class="content-card">
+            <h3>Working with Arrays</h3>
+            <p>Arrays store multiple values in a single variable.</p>
+
+            <div class="code-example">
+              <pre><code>let fruits = ["apple", "banana", "orange"];
+fruits.push("grape");        // Add to end
+fruits.pop();               // Remove from end
+fruits[0];                  // Access first item
+fruits.length;              // Get array size</code></pre>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Dynamic Array Manager</h3>
+            <div class="array-controls">
+              <input type="text" id="arrayItem" placeholder="Add new item" />
+              <button onclick="addToArray()" class="demo-btn">Add</button>
+              <button onclick="removeFromArray()" class="demo-btn">
+                Remove Last
+              </button>
+              <button onclick="clearArray()" class="demo-btn">Clear All</button>
+            </div>
+            <div id="array-display" class="output-area">
+              <strong>Current Array:</strong> <span id="array-content">[]</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Objects Section -->
+        <section class="topic-section" id="objects">
+          <h2>Objects - Complex Data Structures</h2>
+          <div class="content-card">
+            <h3>Understanding Objects</h3>
+            <p>
+              Objects store data in key-value pairs, representing real-world
+              entities.
+            </p>
+
+            <div class="code-example">
+              <pre><code>let person = {
+    name: "John",
+    age: 30,
+    city: "New York",
+    greet: function() {
+        return "Hello, I'm " + this.name;
+    }
+};
+
+console.log(person.name);     // Access property
+person.age = 31;              // Update property</code></pre>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h3>Person Profile Builder</h3>
+            <div class="object-form">
+              <input type="text" id="personName" placeholder="Name" />
+              <input type="number" id="personAge" placeholder="Age" />
+              <input type="text" id="personCity" placeholder="City" />
+              <input type="text" id="personHobby" placeholder="Hobby" />
+              <button onclick="createPerson()" class="demo-btn">
+                Create Profile
+              </button>
+            </div>
+            <div id="object-output" class="output-area"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>
+          &copy; 2025 JavaScript Learning Hub. Master the fundamentals, build
+          the future!
+        </p>
+      </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
