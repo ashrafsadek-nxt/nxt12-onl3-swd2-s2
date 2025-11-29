@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="my portfolio website">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style\style.css">
+    <title>Document</title>
+</head>
+
+<body class="light-background main-text m-0">
+    <nav class="navbar navbar-expand-lg dark-background">
+        <div class="d-flex w-100 justify-content-between align-items-center mx-5">
+            <a class="navbar-brand fw-bold fs-1" href="#">MY PORTOFOLIO</a>
+            <div class="d-flex">
+                <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                </ul>
+            </div></div>
+            <button id="toggle" class="btn ms-3">
+                <img id="sun-icon" src="assets/sun-1.svg" alt="sun-icon">
+                <img id="moon-icon" src="assets/moon-half-right-5.svg" alt="moon-icon" style="display:none;">
+            </button>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main-cont fade-in light-background" id="about-me">
+            <div class="div-title">about me</div>
+            <div class="d-flex flex-column-reverse flex-lg-row align-items-center">
+                <div class="w-75 me-5">
+                    <h2 class="fs-1 fw-bold" id="moving-heading"></h2>
+                    <p class="fs-5">I'm a newbie frontend web developer with expirence in creating visually pleasing
+                        and
+                        dynamic web pages. I'm fairely new to the amazing world of web design but I'm very passionate
+                        about bringing designs to life.
+                        I care very much about every detail, ensuring the design given to me is the same i give back.
+                        The readability and cleanleness of my code matter very much to me
+                    </p><br>
+                    <p class=" fs-5">
+                        I'm a very passionate learner, even though I am new to web design I have done many projects to
+                        enhance my knowledges and skills.
+                        I love taking on new challenges and trying different things and learning about new technologies
+                        that might help me become the best version of my web designer self!
+                    </p>
+                </div>
+                <img src="#" alt="me" class="mb-5 mb-lg-0 dark-background" width="280px" height="280px">
+            </div>
+        </div>
+
+        <div class="main-cont fade-in medium-background" id="projects">
+            <div class="div-title">projects</div>
+            <p class="fs-5 mb-5" style="text-align: center;">I've worked on a couple of mini projects and designs from
+                figma to enhance my html and css skills</p>
+            <div class="prjcts-slider">
+                <div class="prjcts-slides" id="prjcts-slides">
+                </div>
+                <button class="prev">◀</button>
+                <button class="next">▶</button>
+            </div>
+        </div>
+
+        <div class="main-cont fade-in light-background" id="skills">
+            <div class="div-title">my skills</div>
+            <p class="fs-5" style="text-align: center;">These are some of the tools and languages I have expirence
+                with</p>
+                <div class="container">
+            <div class="row mt-3 skills-flex" id="skillsContainer">
+            </div></div>
+        </div>
+
+        <div class="main-cont fade-in medium-background" id="contact">
+            <p class="div-title">Contact Me</p>
+            <p class="fs-5" style="text-align: center;">If you're intrested, Feel free to contact me here:</p>
+            <div class="d-flex flex-column" style="gap:10px;">
+                <div class="d-flex align-items-center justify-content-center" style="gap: 30px;">
+                    <img height="40px"src="assets\email-svgrepo-com.svg" alt="email icon">
+                    <p class="contact-text"><a href="mailto:salma238238@gmail.com" class="text-decoration-none fs-2 fw-semibold main-text">salma238238@gmail.com</a></p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center" style="gap: 30px;">
+                    <img height="40px" src="assets\phone-svgrepo-com.svg" alt="phone icon">
+                    <p class="contact-text main-text fs-2 fw-semibold">+201204320253</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-3 dark-background">
+        <p class="fs-5">thank you for visiting! &copy salma 2025</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script\script.js"></script>
+</body>
+
+</html>
