@@ -1,0 +1,9 @@
+    :root{ --accent:#007bff }
+body{ font-family: Arial, sans-serif; margin:0; background:#f5f5f5 }
+.header{ display:flex; justify-content:space-between; align-items:center; padding:16px; background:white; box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.header a{ margin-left:12px; text-decoration:none }
+.product-list{ display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:16px; padding:20px }
+.product-card{ background:white; padding:12px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.04); text-align:center }
+.product-card img{ width:100%; height:150px; object-fit:cover; border-radius:6px }
+.btn{ display:inline-block; margin-top:8px; padding:8px 12px; background:var(--accent); color:white; border-radius:6px; text-decoration:none }
+.footer{ text-align:center; padding:16px; color:#666 }
