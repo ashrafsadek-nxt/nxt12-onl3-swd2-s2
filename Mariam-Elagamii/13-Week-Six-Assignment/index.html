@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculator-card">
+        <h2 class="title">Translation Price Calculator</h2>
+
+        <label for="fromLang" class="input-label">From</label>
+        <select id="fromLang" class="select-field">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+
+        <label for="toLang" class="input-label">To</label>
+        <select id="toLang" class="select-field">
+            <option value="ar">Arabic</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+        </select>
+
+        <label for="wordsCount" class="input-label">Word Count</label>
+        <input id="wordsCount" type="number" class="input-field" min="1" placeholder="Enter number of words" />
+
+        <label for="couponCode" class="input-label">Coupon (optional)</label>
+        <input id="couponCode" type="text" class="input-field" placeholder="Type coupon code to apply discount" />
+
+        <button id="calcBtn" class="submit-btn">Calculate Price</button>
+
+        <div id="discountSection" class="success-discount">10% discount applied!</div>
+        <div id="output" class="result-box"></div>
+        <div id="error" class="error-box" style="display:none"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
