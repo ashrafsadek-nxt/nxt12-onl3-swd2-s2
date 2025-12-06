@@ -1,0 +1,232 @@
+{
+  "doctors": [
+    {
+      "id": "d1",
+      "name": "Dr Sarah Lee",
+      "specialty": "Cardiology",
+      "status": "Active",
+      "email": "sarah.lee@careconnect.com",
+      "phone": "+1-555-0101",
+      "avatar": "https://i.pravatar.cc/150?u=sarah",
+      "verified": true,
+      "joinDate": "2023-01-15",
+      "appointments": 156
+    },
+    {
+      "id": "d2",
+      "name": "Dr Michael Chen",
+      "specialty": "Radiology",
+      "status": "Active",
+      "email": "michael.chen@careconnect.com",
+      "phone": "+1-555-0102",
+      "avatar": "https://i.pravatar.cc/150?u=michael",
+      "verified": true,
+      "joinDate": "2023-02-20",
+      "appointments": 89
+    },
+    {
+      "id": "d3",
+      "name": "Dr Emily White",
+      "specialty": "Pediatrics",
+      "status": "Inactive",
+      "email": "emily.white@careconnect.com",
+      "phone": "+1-555-0103",
+      "avatar": "https://i.pravatar.cc/150?u=emily",
+      "verified": false,
+      "joinDate": "2023-03-10",
+      "appointments": 67
+    },
+    {
+      "id": "d4",
+      "name": "Dr James Wilson",
+      "specialty": "Dermatology",
+      "status": "Pending",
+      "email": "james.wilson@careconnect.com",
+      "phone": "+1-555-0104",
+      "avatar": "https://i.pravatar.cc/150?u=james",
+      "verified": false,
+      "joinDate": "2023-04-05",
+      "appointments": 0
+    },
+    {
+      "id": "d5",
+      "name": "Dr Lisa Garcia",
+      "specialty": "Neurology",
+      "status": "Active",
+      "email": "lisa.garcia@careconnect.com",
+      "phone": "+1-555-0105",
+      "avatar": "https://i.pravatar.cc/150?u=lisa",
+      "verified": true,
+      "joinDate": "2023-01-30",
+      "appointments": 203
+    }
+  ],
+  "patients": [
+    {
+      "id": "p1",
+      "name": "John Smith",
+      "age": 34,
+      "email": "john.smith@email.com",
+      "phone": "+1-555-0201",
+      "condition": "Diabetes",
+      "status": "Active",
+      "registered": "2023-01-14",
+      "avatar": "https://i.pravatar.cc/150?u=john",
+      "lastVisit": "2023-12-15"
+    },
+    {
+      "id": "p2",
+      "name": "Jane Doe",
+      "age": 28,
+      "email": "jane.doe@email.com",
+      "phone": "+1-555-0202",
+      "condition": "Asthma",
+      "status": "Active",
+      "registered": "2023-03-22",
+      "avatar": "https://i.pravatar.cc/150?u=jane",
+      "lastVisit": "2023-12-10"
+    },
+    {
+      "id": "p3",
+      "name": "Michael Johnson",
+      "age": 45,
+      "email": "michael.johnson@email.com",
+      "phone": "+1-555-0203",
+      "condition": "Hypertension",
+      "status": "Active",
+      "registered": "2022-11-05",
+      "avatar": "https://i.pravatar.cc/150?u=michaelj",
+      "lastVisit": "2023-12-08"
+    },
+    {
+      "id": "p4",
+      "name": "Sarah Williams",
+      "age": 52,
+      "email": "sarah.williams@email.com",
+      "phone": "+1-555-0204",
+      "condition": "Arthritis",
+      "status": "Inactive",
+      "registered": "2023-02-18",
+      "avatar": "https://i.pravatar.cc/150?u=sarahw",
+      "lastVisit": "2023-11-20"
+    },
+    {
+      "id": "p5",
+      "name": "Robert Brown",
+      "age": 38,
+      "email": "robert.brown@email.com",
+      "phone": "+1-555-0205",
+      "condition": "Migraine",
+      "status": "Active",
+      "registered": "2023-04-12",
+      "avatar": "https://i.pravatar.cc/150?u=robert",
+      "lastVisit": "2023-12-12"
+    }
+  ],
+  "pendingVerifications": [
+    {
+      "id": 1,
+      "name": "Dr Sarah Lee",
+      "specialty": "Cardiology",
+      "status": "Pending",
+      "email": "sarah.lee@careconnect.com",
+      "phone": "+1-555-0101",
+      "avatar": "https://i.pravatar.cc/150?u=sarah",
+      "documents": ["medical_license.pdf", "resume.pdf", "certifications.pdf"],
+      "submittedDate": "2023-12-10",
+      "experience": "8 years"
+    },
+    {
+      "id": 2,
+      "name": "Dr Michael Chen",
+      "specialty": "Radiology",
+      "status": "Pending",
+      "email": "michael.chen@careconnect.com",
+      "phone": "+1-555-0102",
+      "avatar": "https://i.pravatar.cc/150?u=michael",
+      "documents": ["medical_license.pdf", "resume.pdf"],
+      "submittedDate": "2023-12-08",
+      "experience": "5 years"
+    },
+    {
+      "id": 3,
+      "name": "Dr Emily White",
+      "specialty": "Pediatrics",
+      "status": "Pending",
+      "email": "emily.white@careconnect.com",
+      "phone": "+1-555-0103",
+      "avatar": "https://i.pravatar.cc/150?u=emily",
+      "documents": ["medical_license.pdf", "resume.pdf", "certifications.pdf", "references.pdf"],
+      "submittedDate": "2023-12-05",
+      "experience": "12 years"
+    },
+    {
+      "id": 4,
+      "name": "Dr James Wilson",
+      "specialty": "Dermatology",
+      "status": "Pending",
+      "email": "james.wilson@careconnect.com",
+      "phone": "+1-555-0104",
+      "avatar": "https://i.pravatar.cc/150?u=james",
+      "documents": ["medical_license.pdf", "resume.pdf"],
+      "submittedDate": "2023-12-12",
+      "experience": "6 years"
+    }
+  ],
+  "platformStats": {
+    "dailyLogins": [
+      { "day": "Mon", "count": 25 },
+      { "day": "Tue", "count": 32 },
+      { "day": "Wed", "count": 28 },
+      { "day": "Thu", "count": 35 },
+      { "day": "Fri", "count": 40 },
+      { "day": "Sat", "count": 18 },
+      { "day": "Sun", "count": 12 }
+    ],
+    "appointmentTrends": [
+      { "category": "Scheduled", "count": 45 },
+      { "category": "Completed", "count": 38 },
+      { "category": "Cancelled", "count": 7 },
+      { "category": "Rescheduled", "count": 12 }
+    ],
+    "newUsersByRole": [
+      { "role": "Patients", "count": 180 },
+      { "role": "Doctors", "count": 25 },
+      { "role": "Admins", "count": 3 }
+    ],
+    "recentActivities": [
+      {
+        "id": 1,
+        "description": "John S. booked an appointment with Dr. Lee (Cardiology)",
+        "action": "Completed",
+        "timestamp": "10:01:24",
+        "type": "appointment",
+        "userType": "Patient"
+      },
+      {
+        "id": 2,
+        "description": "Admin approved Dr. Chen's credentials (Radiology)",
+        "action": "Doctor",
+        "timestamp": "10:35:38",
+        "type": "verification",
+        "userType": "Admin"
+      },
+      {
+        "id": 3,
+        "description": "Admin approved Dr. Chen's medical records",
+        "action": "Admin",
+        "timestamp": "10:18:05",
+        "type": "verification",
+        "userType": "Admin"
+      },
+      {
+        "id": 4,
+        "description": "Patient Emily W. viewed medical records",
+        "action": "Doctor",
+        "timestamp": "10:44:34",
+        "type": "record_access",
+        "userType": "Patient"
+      }
+    ]
+  }
+}
