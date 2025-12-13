@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 750px;
+    padding: 25px;
+    background: #fefefe;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.game-title {
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4a148c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.card-info div {
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 18px;
+}
+
+.card-info span {
+    color: #ffeb3b;
+    font-weight: bold;
+}
+
+.card-play {
+    margin-bottom: 25px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: 2px solid #4a148c;
+}
+
+.card-back {
+    background-color: #ffe082;
+    color: #ff6f00;
+    border: 2px solid #ffb300;
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card-front { transform: rotateY(180deg); }
+.card.flipped .card-back { transform: rotateY(0deg); }
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.card-btn {
+    text-align: center;
+}
+
+.btn {
+    background-color: #1b5e20;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2e7d32;
+}
+
+.restart-btn:hover { background-color: #ff5722; }
+.reset-btn:hover { background-color: #d32f2f; }
+
+.success-modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+}
+
+.success-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.success-content h2 { color: #388e3c; font-size: 28px; margin-bottom: 20px; }
+.success-content p { margin: 10px 0; font-size: 16px; color: #222; }
+
+.close-modal {
+    background-color: #1b5e20;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
